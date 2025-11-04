@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ $.Scratch.Set "Title" (default .Title (index .Site.Params.text (print "title_" (lower .Title)))) }}
+    
     <title>
-      {{ if eq ($.Scratch.Get "Title") .Site.Title }}
-        {{ .Site.Title }}
-      {{ else }}
-        {{ ($.Scratch.Get "Title") }} | {{ .Site.Title }}
-      {{ end }}
+      
+        Ok, I am trying something | La Crítica
+      
     </title>
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
-    <!-- Your custom overrides should be last -->
-    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" />
-    {{ partial "head_custom.html" . }}
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
   </head>
 
-  <body{{ if .IsPage }} class="page"{{ end }}>
+  <body class="page">
     <nav class="header">
       <div class="banner">
-        <a href="{{ relURL .Site.BaseURL }}" class="logo" aria-label="Home">
-          <!-- 🧭 Inline SVG icon -->
+        <a href="/" class="logo" aria-label="Home">
+          
           <svg
    width="109.2308mm"
    height="28.349659mm"
@@ -120,35 +119,93 @@
       </div>
 
       <div class="head-meta">
-        {{ if .IsPage }}
-          <span><a href="{{ relURL .Site.BaseURL }}">{{ (default "Back to Home" .Site.Params.text.back) | safeHTML }}</a></span>
-          {{ if .Params.date }}
-            <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-          {{ end }}
-          {{ if .File.Path }}
-            {{ $RmdFile := (print .File.BaseFileName ".Rmd") }}
-            {{ if (where (readDir (print "content/" .File.Dir)) "Name" $RmdFile) }}
-              {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
-            {{ else }}
-              {{ $.Scratch.Set "FilePath" .File.Path }}
-            {{ end }}
-            {{ $.Scratch.Set "FilePath" (replace ($.Scratch.Get "FilePath") "\\" "/") }}
-            {{ with .Site.Params.github_edit }}
-              <span>
-                <a href="{{ . }}{{ $.Scratch.Get "FilePath" }}">
-                  {{ (default "Edit this page" $.Site.Params.text.edit) | safeHTML }}
-                </a>
-              </span>
-            {{ end }}
-          {{ end }}
-        {{ else }}
-          <span>{{ $.Scratch.Get "Title" }}</span>
-          <span>{{ .Site.Params.text.last_update }}{{ now.Format "2006-01-02" }}</span>
-          {{ $pages := .Pages }}
-          {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-          {{ $paginator := .Paginate (where $pages "Section" "!=" "") }}
-        {{ end }}
+        
+          <span><a href="/">Back to Home</a></span>
+          
+            <span class="date">2025-11-04</span>
+          
+          
+            
+            
+              
+            
+            
+            
+          
+        
       </div>
     </nav>
   </body>
 </html>
+
+<div class="container">
+<article>
+<div class="article-meta">
+
+  <div class="categories">
+  
+  </div>
+
+  <h1><span class="title">Ok, I am trying something</span></h1>
+
+  
+  <h3 class="author">Mariela Puga
+</h3>
+  
+
+  
+  
+
+</div>
+
+
+
+<main>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="post-nav">
+  <span class="nav-prev"><a href="/post/destacado/">&larr; Destacado</a></span>
+  <span class="nav-next"><a href="/post/new_post/">Ok, I am trying to try something &rarr;</a></span>
+</nav>
+
+
+
+</article>
+</div>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+
+<footer>
+
+<div class="footer">
+  <ul class="menu">
+    
+  </ul>
+  
+</div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+/* --- Disable transform/scale on hover for cards / post items --- */
+/* Generic selectors to cover most theme structures */
+.post, .post-card, .entry, .article-card, .card, .item, .post-item, .post-preview {
+  transition: none !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Prevent links from changing layout on hover (padding/margin/line-height) */
+.post a, .post-card a, .entry a, .card a, .item a {
+  transition: color 150ms linear !important;
+  /* only color change allowed; block-level dimension changes disabled */
+}
+
+/* Often themes increase padding or height on hover — force stable padding and height */
+.post:hover, .post-card:hover, .entry:hover, .card:hover, .item:hover {
+  transform: none !important;
+  -webkit-transform: none !important;
+  box-shadow: none !important;
+  padding: inherit !important;
+  margin: inherit !important;
+  height: auto !important;
+}
+
+/* Specific: title link hover that grows boxes — restrict to color only */
+h1 a:hover, h2 a:hover, .post-title a:hover, .entry-title a:hover, .title a:hover {
+  transform: none !important;
+  text-decoration: underline; /* or none, whatever you prefer */
+  color: inherit !important;
+}
+
+/* If theme uses scale() on .thumbnail or .image */
+.thumbnail img, .post-thumbnail img, .post-image img, .feature-image img {
+  transition: none !important;
+  transform: none !important;
+}
+
+/* If theme applies pseudo-element sizing on hover — prevent it */
+.post:hover::before, .post-card:hover::before, .card:hover::before {
+  display: none !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+/* Optional: enforce consistent card box sizing (prevent layout jump) */
+.post-card, .card, .post-preview {
+  box-sizing: border-box !important;
+}
+
+/* Optional: subtle hover effect instead of expansion (if you want some feedback) */
+.post-card:hover, .card:hover {
+  color: inherit !important;
+  background-color: rgba(0,0,0,0.02) !important;
+}

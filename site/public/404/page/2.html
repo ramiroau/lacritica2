@@ -1,28 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{ $.Scratch.Set "Title" (default .Title (index .Site.Params.text (print "title_" (lower .Title)))) }}
+    
     <title>
-      {{ if eq ($.Scratch.Get "Title") .Site.Title }}
-        {{ .Site.Title }}
-      {{ else }}
-        {{ ($.Scratch.Get "Title") }} | {{ .Site.Title }}
-      {{ end }}
+      
+        404 Page not found | La Crítica
+      
     </title>
-    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
-    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
-    <!-- Your custom overrides should be last -->
-    <link rel="stylesheet" href="{{ "css/custom.css" | relURL }}" />
-    {{ partial "head_custom.html" . }}
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
   </head>
 
-  <body{{ if .IsPage }} class="page"{{ end }}>
+  <body>
     <nav class="header">
       <div class="banner">
-        <a href="{{ relURL .Site.BaseURL }}" class="logo" aria-label="Home">
-          <!-- 🧭 Inline SVG icon -->
+        <a href="/" class="logo" aria-label="Home">
+          
           <svg
    width="109.2308mm"
    height="28.349659mm"
@@ -120,35 +119,44 @@
       </div>
 
       <div class="head-meta">
-        {{ if .IsPage }}
-          <span><a href="{{ relURL .Site.BaseURL }}">{{ (default "Back to Home" .Site.Params.text.back) | safeHTML }}</a></span>
-          {{ if .Params.date }}
-            <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-          {{ end }}
-          {{ if .File.Path }}
-            {{ $RmdFile := (print .File.BaseFileName ".Rmd") }}
-            {{ if (where (readDir (print "content/" .File.Dir)) "Name" $RmdFile) }}
-              {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
-            {{ else }}
-              {{ $.Scratch.Set "FilePath" .File.Path }}
-            {{ end }}
-            {{ $.Scratch.Set "FilePath" (replace ($.Scratch.Get "FilePath") "\\" "/") }}
-            {{ with .Site.Params.github_edit }}
-              <span>
-                <a href="{{ . }}{{ $.Scratch.Get "FilePath" }}">
-                  {{ (default "Edit this page" $.Site.Params.text.edit) | safeHTML }}
-                </a>
-              </span>
-            {{ end }}
-          {{ end }}
-        {{ else }}
-          <span>{{ $.Scratch.Get "Title" }}</span>
-          <span>{{ .Site.Params.text.last_update }}{{ now.Format "2006-01-02" }}</span>
-          {{ $pages := .Pages }}
-          {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-          {{ $paginator := .Paginate (where $pages "Section" "!=" "") }}
-        {{ end }}
+        
+          <span>404 Page not found</span>
+          <span>2025-11-04</span>
+          
+          
+          
+          <span>2 / 2</span>
+        
       </div>
     </nav>
   </body>
 </html>
+
+
+<div class="container">
+<main>
+<h1>404 NOT FOUND</h1>
+</main>
+</div>
+
+<script async src="//yihui.org/js/center-img.js"></script>
+
+<footer>
+
+<div class="footer">
+  <ul class="menu">
+    
+  </ul>
+  
+</div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
+
