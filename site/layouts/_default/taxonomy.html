@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+
+<section class="taxonomy-layout">
+
+  <!-- Left column: all taxonomy links -->
+  <aside class="taxonomy-menu">
+    <ul>
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <li>
+          <a 
+            href="{{ (path.Join "categories" ($name | urlize)) | relURL }}"
+            class="{{ if eq $.Title $name }}active{{ end }}"
+          >
+            {{ $name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </aside>
+
+  <!-- Right column: posts from this taxonomy -->
+  <main class="taxonomy-content">
+    {{ partial "taxonomy_grid.html" . }}
+  </main>
+
+</section>
+
+{{ partial "footer.html" . }}

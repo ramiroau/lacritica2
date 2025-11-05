@@ -7,7 +7,7 @@
   "scripts": {
     "lint": "eslint src cypress",
     "start": "run-p start:**",
-    "start:hugo": "hugo -d ../dist -s site -vw",
+    "start:hugo": "hugo server -D -s site --disableFastRender",
     "start:webpack": "webpack-dev-server --config webpack.dev.js --hot",
     "preview": "run-p preview:**",
     "preview:hugo": "npm run start:hugo -- -D -F",
@@ -33,6 +33,7 @@
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^9.2.1",
     "copy-webpack-plugin": "^9.1.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",

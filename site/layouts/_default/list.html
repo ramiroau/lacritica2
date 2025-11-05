@@ -1,56 +1,43 @@
-{{ partial "header.html" . }}
+{{ define "main" }}
+<main class="homepage">
 
-{{/* Featured Post Section */}}
-{{ partial "featured.html" . }}
+  <!-- === FIRST ROW === -->
+  <section class="hero-grid">
+    <div class="hero-column">
+      {{ range first 2 (where .Site.RegularPages "Section" "posts") }}
+        <article class="article">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        </article>
+      {{ end }}
+    </div>
 
-<div class="container">
-<main class="list">
-{{ $pages := .Pages }}
-{{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-{{ $paginator := .Paginate (where $pages "Section" "!=" "") }}
-{{ range $paginator.Pages }}
+    {{ with (index (where .Site.RegularPages "Section" "posts") 2) }}
+      <article class="hero-feature article">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+        {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+      </article>
+    {{ end }}
 
-<section class="article-list">
-  <div class="categories">
-  {{ with .Params.categories }}
-  {{ range first 1 . }}
-    <a href="{{ relURL (print "/categories/" . | urlize) }}">{{ . }}</a>
-  {{ end }}
-  {{ else }}
-    <a>{{ default "Uncategorized" .Site.Params.text.uncategorized }}</a>
-  {{ end }}
-  </div>
-  <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-  <div class="date-author">
-    {{ if .Params.author }}<span class="author">{{ partial "author_names.html" . }}</span> / {{ end }}
-    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-  </div>
-  <div class="summary">
-    <a href="{{ .RelPermalink }}">
-    {{ with .Resources.GetMatch (printf "%s" .Params.thumbnail) }}
-    <div class="thumbnail"><img src="{{ relURL .Permalink }}" alt="Thumbnail" /></div>
-    {{ else }}
-    {{ with  .Params.thumbnail }}
-    <div class="thumbnail"><img src="{{ relURL .}}" alt="Thumbnail" /></div>
-    {{ else }}
-    {{ $img := findRE "<img src=\"[^\"]+\"" .Content 1 }}
-    {{ range $img }}
-    <div class="thumbnail">{{ (print . " alt=\"Thumbnail\" />") | safeHTML }}</div>
+    <div class="hero-column">
+      {{ range (after 3 (first 5 (where .Site.RegularPages "Section" "posts"))) }}
+        <article class="article">
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- === SECOND ROW === -->
+  <section class="secondary-grid">
+    {{ range (after 5 (first 9 (where .Site.RegularPages "Section" "posts"))) }}
+      <article class="article">
+        <h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+        {{ with .Summary }}<p>{{ . }}</p>{{ end }}
+      </article>
     {{ end }}
-    {{ end }}
-    {{ end }}
-    {{ with .Description }}
-      {{ $.Scratch.Set "summary" (markdownify .) }}
-    {{ else }}
-      {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
-    {{ end }}
-    {{ $.Scratch.Get "summary" }}
-    </a>
-  </div>
-</section>
-{{ end }}
+  </section>
+
 </main>
-<nav>{{ template "_internal/pagination.html" . }}</nav>
-</div>
-
-{{ partial "footer.html" . }}
+{{ end }}

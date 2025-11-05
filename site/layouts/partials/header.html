@@ -108,7 +108,7 @@
       <rect
          style="font-variation-settings:normal;vector-effect:none;fill:#f9f9f9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke;stop-color:#000000"
          id="rect3-5"
-         width="137.76581"
+         width="137.76581" 
          height="0.30682811"
          x="45.170418"
          y="-75.586296"
@@ -118,38 +118,19 @@
 </svg>
         </a>
       </div>
+<div class="taxonomy-bar">
+  {{ with .Site.Taxonomies.categories }}
+    <ul>
+      {{ range $key, $value := . }}
+        <li>
+          <a href="{{ "/categories/" | relURL }}{{ $key | urlize }}">{{ $key }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</div>
 
-      <div class="head-meta">
-        {{ if .IsPage }}
-          <span><a href="{{ relURL .Site.BaseURL }}">{{ (default "Back to Home" .Site.Params.text.back) | safeHTML }}</a></span>
-          {{ if .Params.date }}
-            <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-          {{ end }}
-          {{ if .File.Path }}
-            {{ $RmdFile := (print .File.BaseFileName ".Rmd") }}
-            {{ if (where (readDir (print "content/" .File.Dir)) "Name" $RmdFile) }}
-              {{ $.Scratch.Set "FilePath" (print .File.Dir $RmdFile) }}
-            {{ else }}
-              {{ $.Scratch.Set "FilePath" .File.Path }}
-            {{ end }}
-            {{ $.Scratch.Set "FilePath" (replace ($.Scratch.Get "FilePath") "\\" "/") }}
-            {{ with .Site.Params.github_edit }}
-              <span>
-                <a href="{{ . }}{{ $.Scratch.Get "FilePath" }}">
-                  {{ (default "Edit this page" $.Site.Params.text.edit) | safeHTML }}
-                </a>
-              </span>
-            {{ end }}
-          {{ end }}
-        {{ else }}
-          <span>{{ $.Scratch.Get "Title" }}</span>
-          <span>{{ .Site.Params.text.last_update }}{{ now.Format "2006-01-02" }}</span>
-          {{ $pages := .Pages }}
-          {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-          {{ $paginator := .Paginate (where $pages "Section" "!=" "") }}
-          <span>{{ with $paginator }}{{ if .TotalPages }}{{ .PageNumber }} / {{ .TotalPages }}{{ end }}{{ end }}</span>
-        {{ end }}
-      </div>
+
     </nav>
   </body>
 </html>

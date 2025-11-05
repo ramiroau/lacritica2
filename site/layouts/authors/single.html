@@ -1,0 +1,29 @@
+{{ partial "header.html" . }}
+
+<section class="author-page">
+
+  <div class="author-header">
+    {{ with .Params.thumbnail }}
+      <div class="author-image">
+        <img src="{{ . | relURL }}" alt="Author image">
+      </div>
+    {{ end }}
+
+    <div class="author-info">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.bio }}<p>{{ . }}</p>{{ end }}
+    </div>
+  </div>
+
+  <h2>Artículos</h2>
+
+  <div class="secondary-grid-author">
+    {{ range where .Site.RegularPages "Params.author" "intersect" (slice .Title) }}
+      <article class="article">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      </article>
+    {{ end }}
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
