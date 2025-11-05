@@ -19,10 +19,31 @@ main.homepage {
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   color: #111;
 
+}
+
+/* header logo */ 
+
+.header .banner {
+  display: flex;
+  align-items: center; /* vertically centers the SVG */
+  justify-content: center;   /* horizontal centering */
+  height: 175px; /* or whatever fits your header */
+}
+
+.header .logo {
+  width: 600px;
+  align-content: center;
+}
+
+.header .logo svg {
+  max-height: 100%; /* ensures SVG doesn’t overflow */
+  width: auto; /* keeps aspect ratio */
+  display: block; /* removes extra space below SVG */
+  transform: translateY(-05%); /* adjust until visually centered */
 }
 
 /* Titles and headers */
@@ -39,8 +60,8 @@ h1, h2, h3, h4, h5, h6,
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: var(--gutter);
-  padding-left: 12rem;
-  padding-right: 12rem;
+  padding-left: 22rem;
+  padding-right: 22rem;
 }
 
 .hero-feature {
@@ -49,7 +70,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .featured-content h1 {
-  font-size: 2.4em;
+  font-size: 2.5em;
   font-family: 'Jost', Georgia, serif;
   font-weight: 900;
   letter-spacing: 0.01em;
@@ -105,8 +126,8 @@ h1, h2, h3, h4, h5, h6,
   flex-direction: column;
   gap: 2rem;
   padding-top: 2rem;
-  padding-left: 12rem;
-  padding-right: 12rem;
+  padding-left: 22rem;
+  padding-right: 22rem;
 }
 
 .author-header {
@@ -133,7 +154,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .author-info p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #333;
   margin: 0;
 }
@@ -166,7 +187,7 @@ h1, h2, h3, h4, h5, h6,
 .author a,
 .article-list a[href*="/authors/"] {
   color: inherit;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font-family: Jost;
   text-decoration: none;
   font-weight: bold;
@@ -185,8 +206,8 @@ h1, h2, h3, h4, h5, h6,
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--gutter);
-  padding-left: 12rem;
-  padding-right: 12rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
 }
 
 .secondary-grid h1 {
