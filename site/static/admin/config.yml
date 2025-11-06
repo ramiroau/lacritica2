@@ -27,11 +27,10 @@ collections:
       - label: "Category"
         name: "categories"
         widget: "select"
-        options:
-          - { label: "Debates", value: "debates" }
-          - { label: "Simposios", value: "simposios" }
-          - { label: "Reseñas", value: "reseñas" }
-          - { label: "Ensayos", value: "ensayos" }
+        options: ["debates", "simposios", "reseñas", "ensayos"]
+        multiple: true
+        max: 1
+        default: ["ensayos"]
       - label: "Author"
         name: "author"
         widget: "select"
