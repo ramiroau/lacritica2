@@ -43,12 +43,6 @@
   </url><url>
     <loc>//localhost:1313/authors/</loc>
   </url><url>
-    <loc>//localhost:1313/contact/</loc>
-  </url><url>
-    <loc>//localhost:1313/products/</loc>
-  </url><url>
     <loc>//localhost:1313/authors/sebastian-guidi/</loc>
-  </url><url>
-    <loc>//localhost:1313/values/</loc>
   </url>
 </urlset>
