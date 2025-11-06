@@ -6,18 +6,32 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 
 collections:
-  - name: "posts"
+  - name: "post"
     label: "Posts"
-    folder: "content/posts"
+    folder: "site/content/post"
     create: true
-    slug: "{{slug}}"
     format: "frontmatter"
     extension: "md"
-    summary: "{{title}}"
+    slug: "{{slug}}"
+    path: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string", maxLength: 124 }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Description"
+        name: "description"
+        widget: "string"
+        hint: "Short summary (max 124 characters)"
+        pattern:
+          - "^.{0,124}$"
+          - "Description must be 124 characters or fewer"
+      - label: "Category"
+        name: "categories"
+        widget: "select"
+        options:
+          - { label: "Debates", value: "debates" }
+          - { label: "Simposios", value: "simposios" }
+          - { label: "Reseñas", value: "reseñas" }
+          - { label: "Ensayos", value: "ensayos" }
       - label: "Author"
         name: "author"
         widget: "select"
@@ -25,6 +39,6 @@ collections:
         options:
           - "Ramiro Alvarez Ugarte"
           - "Sebastián Guidi"
-          - "Roberto Gargarella"
-          - "Gustavo Arballo"
-      - { label: "Body", name: "body", widget: "markdown" }
+          - "Lucía Fernández"
+          - "Matías Di Pietro"
+      - {label: "Body", name: "body", widget: "markdown"}
