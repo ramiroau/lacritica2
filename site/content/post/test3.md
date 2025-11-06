@@ -1,7 +1,8 @@
 ---
 title: "Ok, I am trying something"
 date: 2025-11-04
-categories: ["ensayos"]
+categories: 
+  - ensayos
 author: ["Mariela Puga"]
 highlight: false
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

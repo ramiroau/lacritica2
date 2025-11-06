@@ -3,7 +3,8 @@ title: "Destacado"
 date: 2025-11-04
 author: ["Ramiro Álvarez Ugarte"]
 thumbnail: img/about-single-origin.jpg
-categories: ["debates"]
+categories:
+  - simposios
 description: Un texto destacado, importante, urgente, que aborda una cuestión fundamental de la vida democrática y en sociedad y en comunidad. Andate Borja. 
 highlight: true
 ---

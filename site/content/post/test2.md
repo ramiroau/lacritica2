@@ -3,7 +3,8 @@ title: "Ok, I am trying to try something (test 2)"
 date: 2025-11-04
 author: ["Roberto Gargarella"]
 highlight: false
-categories: ["debates"]
+categories: 
+  - debates
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 

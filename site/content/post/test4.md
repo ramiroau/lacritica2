@@ -2,7 +2,8 @@
 title: "Prueba de producción"
 date: 2025-11-04
 author: ["Ramiro Álvarez Ugarte"]
-categories: ["debates"]
+categories: 
+  - debates
 highlight: false
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
