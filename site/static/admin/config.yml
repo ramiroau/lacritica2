@@ -20,22 +20,11 @@ collections:
       - { label: "Description", name: "description", widget: "string", maxLength: 124 }
       - label: "Author"
         name: "author"
-        widget: "relation"
-        collection: "authors"
-        searchFields: ["title"]
-        valueField: "title"
-        displayFields: ["title"]
+        widget: "select"
         multiple: true
+        options:
+          - "Ramiro Alvarez Ugarte"
+          - "Sebastián Guidi"
+          - "Roberto Gargarella"
+          - "Gustavo Arballo"
       - { label: "Body", name: "body", widget: "markdown" }
-
-  - name: "authors"
-    label: "Authors"
-    folder: "content/authors"
-    create: true
-    slug: "{{slug}}"
-    format: "frontmatter"
-    extension: "md"
-    summary: "{{title}}"
-    fields:
-      - { label: "Name", name: "title", widget: "string" }
-      - { label: "Bio", name: "bio", widget: "text" }
