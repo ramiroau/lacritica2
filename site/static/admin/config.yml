@@ -41,7 +41,7 @@ collections:
           - "Sebastián Guidi"
           - "Gustavo Arballo"
           - "Roberto Gargarella"
-            - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Image", name: "image", widget: "image", required: false}
       - label: "Highlight"
         name: "highlight"
         widget: "boolean"
