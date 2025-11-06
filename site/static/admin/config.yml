@@ -39,6 +39,12 @@ collections:
         options:
           - "Ramiro Alvarez Ugarte"
           - "Sebastián Guidi"
-          - "Lucía Fernández"
-          - "Matías Di Pietro"
+          - "Gustavo Arballo"
+          - "Roberto Gargarella"
+            - {label: "Image", name: "image", widget: "image", required: false}
+      - label: "Highlight"
+        name: "highlight"
+        widget: "boolean"
+        default: false
+        hint: "Mark true to feature this post on the homepage"
       - {label: "Body", name: "body", widget: "markdown"}
