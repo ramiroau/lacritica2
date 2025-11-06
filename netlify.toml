@@ -8,6 +8,9 @@
   command = "yarn build"
   publish = "dist"
 
+[[plugins]]
+  package = "netlify-plugin-cypress"
+
 [context.deploy-preview]
   command = "yarn build:preview"
 
