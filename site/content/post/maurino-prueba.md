@@ -6,7 +6,7 @@ categories:
   - ensayos
 author:
   - Ramiro Alvarez Ugarte
-thumbnail: /img/logo_critica.svg
+thumbnail: /img/about-direct-sourcing.jpg
 highlight: false
 ---
 Notable.
