@@ -1,0 +1,90 @@
+<div class="authors-row">
+  <h2 class="authors-title">autores</h2>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      {{ $authors := shuffle (where .Site.RegularPages "Section" "authors") }}
+      {{ range $authors }}
+        <div class="swiper-slide author-card">
+          <div class="author-photo">
+            <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
+          </div>
+          <div class="author-info">
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Params.bio }}</p>
+          </div>
+        </div>
+      {{ end }}
+    </div>
+
+    <!-- Add navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<!-- Swiper.js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+      1280: { slidesPerView: 5 },
+      1024: { slidesPerView: 4 },
+      768: { slidesPerView: 3 },
+      480: { slidesPerView: 2 },
+      0: { slidesPerView: 1 },
+  },
+  });
+});
+</script>
+
+<style>
+.authors-row {
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.authors-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.author-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.author-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.author-info h3 {
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+}
+.author-info p {
+  font-size: 0.9em;
+  color: #555;
+}
+</style>

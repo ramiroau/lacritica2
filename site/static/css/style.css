@@ -43,18 +43,10 @@ body {
   height: 175px;
 }
 
-.header .logo {
-  display: block;
-  width: 65%;
-  height: auto;
-  box-sizing: border-box;
-  margin: 0 auto;
-}
-
-.header .logo svg {
+.header .banner svg {
   height: auto;
   max-height: 100%;
-  width: auto;
+  width: 700px; /* increase this value */
   display: block;
   transform: translateY(-5%);
 }
