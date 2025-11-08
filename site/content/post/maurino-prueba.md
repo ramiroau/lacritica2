@@ -5,7 +5,7 @@ description: La crítica se la banca
 categories:
   - ensayos
 author:
-  - Ramiro Alvarez Ugarte
+  - Gustavo Maurino
 thumbnail: /img/about-direct-sourcing.jpg
 highlight: false
 ---
