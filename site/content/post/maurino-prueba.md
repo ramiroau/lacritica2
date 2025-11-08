@@ -11,4 +11,4 @@ highlight: false
 ---
 Notable.
 
-Acaso está vez, ***La Crítica*** construya.
+Acaso esta vez, ***La Crítica*** construya. La construcción es crítica.
