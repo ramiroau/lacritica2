@@ -34,3 +34,6 @@ enableRobotsTXT = true
   url = "/nosotros/"
   weight = 2
 
+[permalinks]
+  authors = "/authors/:slug/"
+

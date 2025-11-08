@@ -3,18 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>//localhost:1313/categories/</loc>
-    <lastmod>2025-11-08T19:36:15+00:00</lastmod>
+    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/ensayos/</loc>
-    <lastmod>2025-11-08T19:36:15+00:00</lastmod>
+    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
-    <lastmod>2025-11-08T19:36:15+00:00</lastmod>
+    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/maurino-prueba/</loc>
-    <lastmod>2025-11-08T19:36:15+00:00</lastmod>
+    <loc>//localhost:1313/post/no-me-falles-papetti/</loc>
+    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/</loc>
+    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/maurino-prueba/</loc>
     <lastmod>2025-11-08T19:36:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/probando-otras-cosas-desde-decap-cms/</loc>

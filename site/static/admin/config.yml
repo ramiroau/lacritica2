@@ -36,16 +36,15 @@ collections:
         multiple: true
         max: 1
         default: ["ensayos"]
-      - label: "Author"
+        - label: "Author"
         name: "author"
-        widget: "select"
+        widget: "relation"
+        collection: "authors"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
         multiple: true
-        options:
-          - "Ramiro Alvarez Ugarte"
-          - "Sebastián Guidi"
-          - "Gustavo Arballo"
-          - "Roberto Gargarella"
-          - "Gustavo Maurino"
+        hint: "Select one or more authors from the authors collection"
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
@@ -56,3 +55,39 @@ collections:
         default: false
         hint: "Mark true to feature this post on the homepage"
       - {label: "Body", name: "body", widget: "markdown"}
+  
+  collections:
+  - name: "authors"
+    label: "Autores"
+    label_singular: "Autor"
+    folder: "content/authors"
+    create: true
+    slug: "{{slug}}" # filename pattern
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "authors/{{slug}}"
+    identifier_field: "title"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "Full name of the author" }
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "Automatically generated from title, but you can edit it if needed"
+        pattern: ['^[a-z0-9-]+$', "Only lowercase letters, numbers and hyphens allowed"]
+      - { label: "Type", name: "type", widget: "hidden", default: "authors" }
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        media_folder: "static/img"
+        public_folder: "/img"
+        hint: "Upload the author's photo (will be stored in static/img)"
+      - label: "Short bio"
+        name: "bio"
+        widget: "text"
+        hint: "Short biography of the author (used in author cards and lists)"
+      - label: "Mid-size bio"
+        name: "body"
+        widget: "markdown"
+        hint: "Longer author bio (can include links, formatting, etc.)"
+

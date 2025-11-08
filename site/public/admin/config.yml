@@ -6,6 +6,35 @@ media_folder: "/site/static/img" # Folder where user uploaded files should go
 public_folder: "/img"
 
 collections:
+  - name: "authors"
+    label: "Autores"
+    label_singular: "Autor"
+    folder: "content/authors"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "authors/{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", hint: "Full name of the author" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "the-full-name-of-the-author (used in URL)" }
+      - { label: "Type", name: "type", widget: "hidden", default: "authors" }
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "image"
+        choose_url: true
+        media_folder: "static/img"
+        public_folder: "/img"
+        hint: "Upload the author's photo (will be stored in static/img)"
+      - label: "Short bio"
+        name: "bio"
+        widget: "text"
+        hint: "Short biography of the author (used in author cards and lists)"
+      - label: "Mid-size bio"
+        name: "body"
+        widget: "markdown"
+        hint: "Longer author bio (can include links, formatting, etc.)"
+
   - name: "post"
     label: "Posts"
     folder: "/site/content/post"
