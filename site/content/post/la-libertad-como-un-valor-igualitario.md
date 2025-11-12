@@ -1,7 +1,7 @@
 ---
-title: La libertad como un valor igualitario
+title: La Igualdad como un valor Liberal
 date: 2025-11-12T12:10:21.563Z
-description: "¿Cuál es el lugar de la libertad en la estructura constitucional Argentina? "
+description: El lugar de la libertad y la Igualdad en la estructura constitucional Argentina
 categories:
   - reseñas
 author:
@@ -13,8 +13,6 @@ Fue 1953 una constitución de libertad?
 
 Fue 1994 una constitución de igualdad?
 
-Más derechos y Menos Libertad?
+Más derechos, más libertad y mejor igualdad.
 
 Las dimensiones igualitarias de la libertad.
-
-Liberatad e Igualdad en la Constitución post 2001?
