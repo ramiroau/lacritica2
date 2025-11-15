@@ -893,6 +893,18 @@ h1, h2, h3, h4, h5, h6,
   background-color: var(--accent-burgundy); /* warm beige */
 }
 
+/* --- Mobile responsive --- */
+@media screen and (max-width: 768px) {
+  .taxonomy-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 0.8rem; /* tighter spacing between items */
+    padding-left: 1rem;   /* optional: some padding */
+    padding-right: 1rem;  /* optional: some padding */
+  }
+}
+
+
+
 @media screen and (max-width: 1170px) {
 
   /* Hide menu */
@@ -902,11 +914,22 @@ h1, h2, h3, h4, h5, h6,
 
   /* Fix grid so it does NOT collapse to 1 column */
   .taxonomy-grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
     gap: 1.2rem; /* optional: improves spacing on mobile */
+  }
+
+/* --- Mobile responsive --- */
+@media screen and (max-width: 768px) {
+  .taxonomy-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 0.8rem; /* tighter spacing between items */
+    padding-left: 1rem;   /* optional: some padding */
+    padding-right: 1rem;  /* optional: some padding */
   }
 }
 
+
+}
 /* footer */
 
 .footer {

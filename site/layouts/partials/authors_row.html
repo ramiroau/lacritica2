@@ -1,11 +1,11 @@
 <div class="authors-row">
   <div class="authors-header">
-    <div class="swiper-button-prev"></div>
+    <div class="authors-prev"></div>
     <h2 class="authors-title">autores</h2>
-    <div class="swiper-button-next"></div>
+    <div class="authors-next"></div>
   </div>
 
-  <div class="swiper-container">
+  <div class="swiper authors-swiper">
     <div class="swiper-wrapper">
       {{ $authors := shuffle (where .Site.RegularPages "Section" "authors") }}
       {{ range $authors }}
@@ -35,23 +35,23 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  new Swiper(".swiper-container", {
+  new Swiper(".authors-swiper", {
     spaceBetween: 24,
     loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".authors-next",
+      prevEl: ".authors-prev",
     },
-    autoplay: false, // ensure no automatic sliding
+    autoplay: false,
     grabCursor: true,
     breakpoints: {
-      0: { slidesPerView: 1 },     // phones
-      480: { slidesPerView: 1.2 }, // small phones
-      640: { slidesPerView: 2 },   // large phones
-      768: { slidesPerView: 2.5 }, // tablets
-      1024: { slidesPerView: 3 },  // small desktops
-      1280: { slidesPerView: 4 },  // medium desktops
-      1536: { slidesPerView: 5 },  // large screens
+      0: { slidesPerView: 1 },
+      480: { slidesPerView: 1.2 },
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 2.5 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 4 },
+      1536: { slidesPerView: 5 },
     },
   });
 });
@@ -62,11 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
   margin-top: 2rem;
   background-color: var(--accent-beige);
   padding: 2rem 1rem 4rem;
-  box-sizing: border-box;
   overflow: hidden;
 }
 
-/* Header layout */
 .authors-header {
   display: flex;
   align-items: center;
@@ -75,20 +73,17 @@ document.addEventListener("DOMContentLoaded", function () {
   margin-bottom: 2rem;
 }
 
-/* Title */
+/* TITLE */
 .authors-title {
   color: var(--base-bg);
   font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 600;
   margin: 0;
-  text-align: center;
 }
 
-/* Navigation buttons */
-.swiper-button-prev,
-.swiper-button-next {
-  margin-top: 2px;
-  position: relative;
+/* AUTHOR NAV BUTTONS (UNIQUE + ISOLATED) */
+.authors-prev,
+.authors-next {
   width: 36px;
   height: 36px;
   color: var(--base-bg);
@@ -97,31 +92,40 @@ document.addEventListener("DOMContentLoaded", function () {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+/* HOVER EFFECT */
+.authors-prev:hover,
+.authors-next:hover {
   background-color: var(--base-bg);
   color: var(--forest-green);
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 14px;
+/* ARROWS */
+.authors-prev::after {
+  content: "‹";
+  font-size: 20px;
   font-weight: 700;
+  line-height: 1;
 }
 
-/* Swiper slides */
+.authors-next::after {
+  content: "›";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* SLIDES */
 .author-card {
   background: var(--base-bg);
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   text-align: center;
-  transition: transform 0.2s ease;
+  transition: transform .2s ease;
 }
 
 .author-card:hover {
@@ -141,7 +145,6 @@ document.addEventListener("DOMContentLoaded", function () {
   font-size: 1.1em;
   margin-bottom: 0.5rem;
   color: var(--neutral-800);
-  line-height: 1.2;
 }
 
 .author-info p {
@@ -149,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
   color: #555;
 }
 
-/* Responsive tweaks */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .authors-row {
     padding: 1.5rem 0.5rem 3rem;
@@ -170,8 +173,8 @@ document.addEventListener("DOMContentLoaded", function () {
     font-size: 1.2rem;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
+  .authors-prev,
+  .authors-next {
     width: 28px;
     height: 28px;
   }
