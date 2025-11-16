@@ -1,7 +1,7 @@
 <div class="authors-row">
-  <div class="authors-header">
+  <div class="authors-header-row">
     <div class="authors-prev"></div>
-    <h2 class="authors-title">
+    <h2 class="authors-title-row">
       <a href="{{ "/autores/" | relURL }}">autores</a>
     </h2>
     <div class="authors-next"></div>
@@ -12,12 +12,12 @@
       {{ $authors := shuffle (where .Site.RegularPages "Section" "autores") }}
       {{ range $authors }}
         <div class="swiper-slide">
-          <a href="{{ .RelPermalink }}" class="author-card-link">
-            <div class="author-card">
-              <div class="author-photo">
+          <a href="{{ .RelPermalink }}" class="author-card-link-row">
+            <div class="author-card-row">
+              <div class="author-photo-row">
                 <img src="{{ .Params.thumbnail | relURL }}" alt="{{ .Title }}">
               </div>
-              <div class="author-info">
+              <div class="author-info-row">
                 <h3>{{ .Title }}</h3>
                 <p>{{ .Params.bio }}</p>
               </div>
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
   overflow: hidden;
 }
 
-.authors-header {
+.authors-header-row {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,12 +75,19 @@ document.addEventListener("DOMContentLoaded", function () {
   margin-bottom: 2rem;
 }
 
+.author-photo-row img {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
 /* TITLE */
-.authors-title {
+.authors-title-row {
   color: var(--base-bg);
-  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-size: clamp(1.8rem, 2vw, 1.8rem);
   font-weight: 600;
   margin: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* AUTHOR NAV BUTTONS (UNIQUE + ISOLATED) */
@@ -121,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 
 /* SLIDES */
-.author-card {
+.author-card-row {
   background: var(--base-bg);
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -130,26 +137,35 @@ document.addEventListener("DOMContentLoaded", function () {
   transition: transform .2s ease;
 }
 
-.author-card:hover {
+.authors-title-row a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.author-card-link-row {
+  text-decoration: none;
+  color: inherit;
+}
+
+.author-card-row:hover {
   transform: translateY(-4px);
 }
 
-.author-photo img {
+.author-photo-row img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
   border: 1px solid var(--neutral-600);
 }
 
-.author-info h3 {
+.author-info-row h3 {
   font-size: 1.1em;
   margin-bottom: 0.5rem;
   color: var(--neutral-800);
 }
 
-.author-info p {
+.author-info-row p {
   font-size: 0.9em;
   color: #555;
 }
@@ -160,18 +176,18 @@ document.addEventListener("DOMContentLoaded", function () {
     padding: 1.5rem 0.5rem 3rem;
   }
 
-  .author-card {
+  .author-card-row {
     padding: 1rem;
   }
 
-  .author-photo img {
+  .author-photo-row img {
     width: 90px;
     height: 90px;
   }
 }
 
 @media (max-width: 480px) {
-  .authors-title {
+  .authors-title-row {
     font-size: 1.2rem;
   }
 

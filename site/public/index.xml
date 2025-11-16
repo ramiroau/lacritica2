@@ -9,6 +9,13 @@
     <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>ACIJ. De la excepción a la regla</title>
+      <link>//localhost:1313/events/event2/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/events/event2/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>La vida de HLA Hart</title>
       <link>//localhost:1313/resenas/hla/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
@@ -20,13 +27,6 @@
       <link>//localhost:1313/events/event1/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/events/event1/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Red de Estudios Empíricos en Derecho</title>
-      <link>//localhost:1313/events/event2/</link>
-      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/events/event2/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
     </item>
     <item>
@@ -188,7 +188,7 @@
       <link>//localhost:1313/cont%C3%A1ctenos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/cont%C3%A1ctenos/</guid>
-      <description>&lt;p&gt;Recibimos correos de lectores, quejas, ideas, propuestas y demás en &lt;a href=&#34;mailto:contacto@lacritica.ar&#34;&gt;contacto@lacritica.ar&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;(No respondemos, pero leemos. Si desea que su comentario no sea publicado en la sección &amp;ldquo;Correo de lectores&amp;rdquo;, hágannoslo saber).&lt;/p&gt;</description>
+      <description>&lt;p&gt;Recibimos correos de lectores, quejas, ideas, propuestas y demás en &lt;a href=&#34;mailto:contacto@lacritica.ar&#34;&gt;contacto@lacritica.ar&lt;/a&gt;. Si desea que su comentario no sea publicado en la sección &amp;ldquo;Correo de lectores&amp;rdquo;, hágannoslo saber. Si tiene eventos, documentos, o reportes que crea relevante anunciar en la sección &amp;ldquo;Cosas que pasan&amp;rdquo;, pueden enviarnos un correo con la información necesaria a &lt;a href=&#34;mailto:cosasquepasan@lacritica.ar&#34;&gt;cosasquepasan@lacritica.ar&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Agustina Ramon Michel</title>

@@ -44,6 +44,18 @@
                     {{ $d.Day }} de {{ $month }} de {{ $d.Year }}</p>
                   {{ end }}
 
+                  {{ with .Params.date_of_doc }}
+                    <p class="date-of-doc">
+                    {{ . }}</p>
+                  {{ end }}
+
+                  {{ with .Params.pdf }}
+                    <p class="pdf">
+                      <img src="{{ "img/file-text.svg" | relURL }}" alt="Archivo" width="16" height="16" style="margin-right:4px;">
+                      <a href="{{ . | relURL }}" target="_blank">Documento (pdf)</a>
+                    </p>
+                  {{ end }}
+
                   {{ with .Params.place }}
                     <p class="event-place">
                     <img src="{{ "img/map-pin.svg" | relURL }}" alt="Lugar" width="16" height="16" style="margin-right:4px;">
@@ -173,6 +185,15 @@ document.addEventListener("DOMContentLoaded", function () {
   line-height: 0;
 }
 
+.event-card h5 {
+  font-family: 'Jost';
+  font-weight: 700;
+  font-size: 0.83rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
 .event-type {
     margin: 0 0 0.25rem 0;
 
@@ -192,31 +213,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 .event-date {
+  display: flex;
+  align-items: center;   /* baseline also works */
+  gap: 0.25rem;
+
   margin: 0 0 0.25rem 0;
   font-family: 'Jost';
   text-decoration: none;
   font-size: 0.8rem;
   font-weight: 600;
-  padding-left: 1.8rem;
-  text-indent: -1.8em;
-  gap: 0.25rem; /* if you include an SVG icon */
 
+  /* remove these — they cause misalignment */
+  padding-left: 0;
+  text-indent: 0;
 }
 
-
-.event-place {
+.date-of-doc {
   margin: 0 0 0.25rem 0;
   text-decoration: none;
   font-size: 0.8rem;
   color: var(--neutral-500);
-  padding-left: 1.8rem;
-  text-indent: -1.8em;
-    gap: 0.25rem; /* if you include an SVG icon */
+  gap: 0.25rem; /* if you include an SVG icon */
 
 }
 
-.event-more-info a {
+.pdf {
+  display: flex;
+  align-items: center;   /* baseline also works */
+  gap: 0.25rem;
+
   margin: 0 0 0.25rem 0;
+  font-family: 'Jost';
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  /* remove these — they cause misalignment */
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.pdf a {
+  color: inherit;        /* Uses parent color → not blue */
+  font-size: 0.8rem;
+  text-decoration: none; /* Removes underline */
+  font-weight: 500;      /* Optional: nicer weight */
+}
+
+.pdf a:hover {
+  text-decoration: underline; /* Optional hover effect */
+}
+
+.event-place {
+  display: flex;
+  align-items: center;   /* baseline also works */
+  gap: 0.25rem;
+
+  margin: 0 0 0.25rem 0;
+  font-family: 'Jost';
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  /* remove these — they cause misalignment */
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.event-more-info a {
+  letter-spacing: 0.01rem;
+  margin-bottom: 0;
+  line-height: 1;
+  letter-spacing: 0.01rem;
   text-decoration: none;
   color: var(--neutral-800);
   font-size: 0.8rem;

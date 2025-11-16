@@ -379,11 +379,6 @@ h1, h2, h3, h4, h5, h6,
     width: 100%;
   }
 
-  .article-sidebar {
-    width: 100%;
-    text-align: center;
-  }
-
   .article-sidebar h1 {
     text-align: center;
   }
