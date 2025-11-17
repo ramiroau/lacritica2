@@ -8,6 +8,7 @@ categories:
   - debates
 author:
   - Gustavo Maurino
+  - Ramiro Álvarez Ugarte
 thumbnail: /img/mostro.png
 highlight: false
 ---
