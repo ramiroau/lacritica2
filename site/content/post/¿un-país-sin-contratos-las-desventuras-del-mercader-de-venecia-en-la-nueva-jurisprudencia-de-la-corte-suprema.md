@@ -11,7 +11,7 @@ author:
 thumbnail: ": Más responsabilidad autoregulatoria y menos buena fe?"
 highlight: false
 ---
-##### **Una Historia Tucumana, la de todos en Argentina**
+### **Una Historia Tucumana, la de todos en Argentina**
 
 Hace unos días -lo que queda de- la Corte Suprema dictó un fallo, muy breve, casi imperceptible, que resolvió una disputa contractual originada en Tucumán hace 12 años ("Sucesores de Camilo Racca y otro c/ Comercial Carrazana S.A. y otros s/consignación" 11/11/25) 
 
@@ -29,7 +29,7 @@ Pues bien, doce años después de desencadenado el conflicto los jueces de la Co
 
 > ##### *Eso es precisamente lo que hacen las altas Cortes de un país con el grupo selecto de casos que eligen discrecionalmente para estudiar y fallar cada año: Resuelven un caso del pasado y envían señales con las que intenten moldear el futuro. Ahí reside la clave del enorme poder social que le confiere su alta autoridad constitucional.*
 
-##### **Un Fallo simple**
+### **Un Fallo simple**
 
 ¿Cómo se resolvió el caso de los desventurados contratantes tucumanos?: El, muy breve, fallo dijo simplemente: “la claridad de la cláusula \[del contrato] únicamente permite concluir en que los contratantes pactaron voluntariamente un parámetro determinado de equivalencia para el supuesto de pago en pesos, cual fue, indudablemente, la cotización del dólar del BNA correspondiente al día del efectivo pago”. 
 
@@ -39,7 +39,9 @@ Mas abajo vamos a considerar qué ha querido decirnos la Corte, a todos, en Arge
 
 Pero antes, detengámonos un momento en el derecho, pues el derecho importa (¿o no?).
 
-##### **El nuevo derecho privado argentino: El derecho privado de la buena fe**
+
+
+### **El nuevo derecho privado argentino: El derecho privado de la buena fe**
 
 Hace ya una década, Argentina adoptó un nuevo Código Civil y Comercial (CCC) que introdujo una profunda reforma en la regulación del universo de las relaciones económicas entre particulares en el país.
 
@@ -49,7 +51,7 @@ Uno de los grandes aciertos del nuevo CCC consistió en definir una estructura d
 
 > ##### *El breve artículo 9 del CCC expresa ahora el núcleo ideológico fundamental del derecho privado: un derecho privado relacional, social, orientado a facilitar la cooperación -no atomizado, individualista, orientado a encauzar el egoísmo.*
 
-##### **El dilema de la Corte. Un mensaje que porta algo de valor.**
+### **El dilema de la Corte. Un mensaje que porta algo de valor.**
 
 El conflicto del contrato tucumano nos pone -y habrá puesto a la Corte- frente a un angustioso dilema.
 
@@ -67,7 +69,7 @@ El mensaje de la Corte tiene una alta carga moral, sutil pero muy significativa,
 
 El mensaje social que enviá la Corte a los contratantes es algo así como: “háganse cargo de los contratos que firman, en este país de locos, pues la Corte sostendrá lo que acuerden”.
 
-##### **Los límites de la racionalidad en un mercado desquiciado. Por qué la buena fe es más importante que nunca. La lamentable omisión de la Corte**
+### **Los límites de la racionalidad en un mercado desquiciado. Por qué la buena fe es más importante que nunca. La lamentable omisión de la Corte**
 
 El mensaje de la Corte es significativo: anuncia que se viene un tiempo de responsabilización individual e internalización de las decisiones y previsiones contractuales. El problema en este mensaje es la omisión de toda referencia a las prácticas institucionales y regulatorias que rompen continuamente los marcos de referencia y previsión de la ciudadanía, con trampas, abusos y traiciones institucionales. Acaso la Corte se está imaginando que viene un tiempo de mercado estable, sin distorsiones tramposas impuestas desde el estado. Acaso es su apuesta. Pero lo cierto es que no lo dijo. *Nos deja con la carga de hacernos cargo del juego, pero sin la garantía de reglas de juego estables ni de que se jugará con árbitros razonables.*
 
