@@ -8,7 +8,7 @@ categories:
   - debates
 author:
   - Gustavo Maurino
-thumbnail: ": Más responsabilidad autoregulatoria y menos buena fe?"
+thumbnail: /img/mostro.png
 highlight: false
 ---
 ### **Una Historia Tucumana, la de todos en Argentina**
