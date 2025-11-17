@@ -1,8 +1,8 @@
-{{ $section := site.GetPage "section" "catastrophe" }}
+{{ $section := site.GetPage "section" "catastrofe" }}
 
 {{ if and $section $section.Params.show }}
 
-  {{ $catastrophePosts := first 6 ($section.Pages.ByDate.Reverse) }}
+  {{ $catastrofePosts := first 6 ($section.Pages.ByDate.Reverse) }}
 
   <div class="catastrophe">
 
@@ -19,7 +19,7 @@
   </div>
 
   <div class="cat_articles">
-    {{ range $catastrophePosts }}
+    {{ range $catastrofePosts }}
       <article class="article">
 
         <h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
