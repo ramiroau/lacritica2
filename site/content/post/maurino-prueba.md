@@ -8,6 +8,7 @@ author:
   - Gustavo Maurino
 thumbnail: /img/about-direct-sourcing.jpg
 highlight: false
+callouts:
 ---
 Notable.
 

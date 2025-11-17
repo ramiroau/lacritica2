@@ -1,0 +1,18 @@
+{{ $raw := .RawContent }}
+{{ $blocks := split $raw "\n\n" }}
+
+{{ $callouts := .Params.callouts | default slice }}
+{{ $countCallouts := len $callouts }}
+{{ $positions := shuffle (seq (len $blocks)) | first $countCallouts }}
+
+{{ range $i, $b := $blocks }}
+
+  <div class="para-block">
+    {{ $b | markdownify }}  
+  </div>
+
+  {{ if in $positions $i }}
+    {{ partial "callout.html" (index $callouts (mod $i $countCallouts)) }}
+  {{ end }}
+
+{{ end }}

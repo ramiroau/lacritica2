@@ -8,11 +8,11 @@
     <language>en-us</language>
     <atom:link href="//localhost:1313/autores/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Agustina Ramon Michel</title>
-      <link>//localhost:1313/autores/agustina-ramon-michel/</link>
+      <title>Agustina Ramón Michel</title>
+      <link>//localhost:1313/autores/agustina_ramon_michel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/autores/agustina-ramon-michel/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+      <guid>//localhost:1313/autores/agustina_ramon_michel/</guid>
+      <description>&lt;p&gt;Investigo temas de derecho, género y salud ante todo, pero no solamente. Me gusta hacerlo de manera empírica y teórica. Es probable que conozca más profesionales de la salud que abogados. Fui aprendiendo de América Latina. Trabajo en el CEDES y en la Universidad de Palermo, también doy clases en la UBA. Me gradué de abogada en la UNT, Tucumán, hace casi 20 años pero todavía me aspiro las S.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gustavo Arballo</title>
@@ -44,10 +44,10 @@
     </item>
     <item>
       <title>Roberto Gargarella</title>
-      <link>//localhost:1313/autores/roberto-gargarella/</link>
+      <link>//localhost:1313/autores/roberto_gargarella/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/autores/roberto-gargarella/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</description>
+      <guid>//localhost:1313/autores/roberto_gargarella/</guid>
+      <description>&lt;p&gt;Hijo de campesinos italianos. Académico a tiempo completo. Doctor en derecho x 2. Sociólogo. Escribir, sacar fotos y mirar cine, todo el tiempo. Racing. Helados. Y ya que estamos, socialismo para superar la fase predatoria de la humanidad.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sebastián Guidi</title>

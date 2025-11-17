@@ -78,10 +78,7 @@
     <lastmod>2025-11-08T22:04:57+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/categories/ensayos/</loc>
-    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/no-me-falles-papetti/</loc>
-    <lastmod>2025-11-08T21:10:51+00:00</lastmod>
+    <lastmod>2025-11-08T19:36:15+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/maurino-prueba/</loc>
     <lastmod>2025-11-08T19:36:15+00:00</lastmod>
@@ -101,16 +98,10 @@
     <loc>//localhost:1313/post/prueba-destacado/</loc>
     <lastmod>2025-11-06T14:27:22+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/yay-dcms-works/</loc>
-    <lastmod>2025-11-04T22:04:57+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/catastrofe/destacado/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/destacado/</loc>
-    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/test3/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/new_post/</loc>
@@ -122,15 +113,12 @@
     <loc>//localhost:1313/post/test1/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/post/test4/</loc>
-    <lastmod>2025-11-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:1313/categories/simposios/</loc>
     <lastmod>2025-11-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/cont%C3%A1ctenos/</loc>
   </url><url>
-    <loc>//localhost:1313/autores/agustina-ramon-michel/</loc>
+    <loc>//localhost:1313/autores/agustina_ramon_michel/</loc>
   </url><url>
     <loc>//localhost:1313/autores/</loc>
   </url><url>
@@ -156,7 +144,7 @@
   </url><url>
     <loc>//localhost:1313/autores/ramiro-alvarez-ugarte/</loc>
   </url><url>
-    <loc>//localhost:1313/autores/roberto-gargarella/</loc>
+    <loc>//localhost:1313/autores/roberto_gargarella/</loc>
   </url><url>
     <loc>//localhost:1313/autores/sebastian-guidi/</loc>
   </url><url>

@@ -203,6 +203,38 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: -3rem;
 }
 
+/* Callouts / destacados */ 
+
+.random-callout {
+  background-color: var(--accent-blue);
+  color: var(--base-bg);
+  font-family: 'Jost';
+  border-left: 8px solid var(--accent);
+  padding: 2rem 4rem;
+}
+
+.share-fixed {
+  display: flex;
+  gap: 0.8rem;
+  align-items: right;
+}
+
+.share-icon {
+
+  padding: 0.4rem;
+  border-radius: 6px;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.share-icon:hover {
+  background: #ddd;
+}
+
+
+
 /* Catastrophe specific grid */
 
 .catastrophe-grid {

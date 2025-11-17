@@ -8,6 +8,7 @@ author:
   - Gustavo Maurino
 thumbnail: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSipAypONNr7T1UARPW5s3PdrbpN6_87MsFTwBKZvNPH473XuNlcppSPss5LawTlska2s5eWBC3LrPwuaseY3KEtsljSlE1C_t4_GZZnzSy&s=10
 highlight: false
+callouts:
 ---
 Fue 1953 una constitución de libertad?
 

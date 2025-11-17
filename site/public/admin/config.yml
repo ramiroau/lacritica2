@@ -60,6 +60,16 @@ collections:
         default: false
         hint: "Marcar si va a la nota destacada de la home"
 
+      - label: "Frases destacadas"
+        name: "highlight_phrases"
+        widget: "list"
+        hint: "Frases destacadas, breves que aparecerán dispersas en el artículo"
+        field:
+          label: "Frase"
+          name: "phrase"
+          widget: "string"
+
+
       - { label: "Body", name: "body", widget: "markdown" }
 
 
