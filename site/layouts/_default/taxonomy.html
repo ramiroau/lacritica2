@@ -5,10 +5,12 @@
 
 <section class="taxonomy-layout" data-term="{{ .Title | urlize }}">
 
-  <!-- Left column: all taxonomy links -->
-  <aside class="taxonomy-menu {{ $termClass }}">
-    <ul>
-      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+<!-- Left column: all taxonomy links -->
+<aside class="taxonomy-menu {{ $termClass }}">
+  <ul>
+    {{ $exclude := slice "catastrophe" "internal" "hidden" }}
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      {{ if not (in $exclude $name) }}
         <li>
           <a 
             href="{{ (path.Join "categories" ($name | urlize)) | relURL }}"
@@ -18,8 +20,9 @@
           </a>
         </li>
       {{ end }}
-    </ul>
-  </aside>
+    {{ end }}
+  </ul>
+</aside>
 
   <!-- Right column: posts from this taxonomy -->
   <main class="taxonomy-content">

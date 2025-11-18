@@ -98,8 +98,12 @@
       {{ $month := index $months (.Format "January") }}
       <p class="post-date">{{ .Day }} de {{ $month }} de {{ .Year }}</p>
     {{ end }}
-
+    
+    {{ if not .Params.skip_partial }}
     {{ partial "share.html" . }}
+    {{ end }}
+
+
 
 
     {{ with .Params.category }}

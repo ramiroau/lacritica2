@@ -1,7 +1,7 @@
 ---
-title: "Misceláneas: Diez artículos que marcaron mi vida académica"
+title: "Diez artículos que marcaron mi vida académica"
 date: 2025-11-18T01:08:16.195Z
-description: Textos que definieron el modo en que hoy pienso
+description: Textos centrales que definieron el modo en que hoy pienso
 categories:
   - ensayos
 author:

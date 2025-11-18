@@ -15,6 +15,7 @@
       <div class="article-content">
         <div class="categories">
           {{ with .Params.categories }}
+
             {{ range first 1 . }}
               <a href="{{ relURL (print "/categories/" . | urlize) }}">{{ . }}</a>
             {{ end }}

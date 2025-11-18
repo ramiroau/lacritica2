@@ -4,7 +4,7 @@ date: 2025-11-04
 author: ["Ramiro Álvarez Ugarte"]
 thumbnail: img/about-single-origin.jpg
 categories:
-  - simposios
+  - debates
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 highlight: false
 callouts:

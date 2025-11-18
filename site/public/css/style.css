@@ -201,9 +201,6 @@ h1, h2, h3, h4, h5, h6,
   margin-right: 0.2em; /* small space after each author */
 }
 
-
-
-
 .hero-column .article .summary {
   font-size: 1.1rem;
   margin-bottom: 1rem;
@@ -390,6 +387,7 @@ h1, h2, h3, h4, h5, h6,
   .cat_articles {
     order: 2; /* articles after */
   }
+  
 .article-sidebar {
   text-align: center; /* for titles or text inside */
 }
@@ -491,6 +489,7 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;            /* same color as surrounding text */
   text-decoration: none;     /* remove underline */
   transition: all 0.2s ease;
+
 }
 
 .article-sidebar .post-author .author-link:hover {
