@@ -45,8 +45,14 @@ cleanDestinationDir = true
   autores = "/autores/:slug/"
 
 [slug]
-remove_accents = true
+  remove_accents = true
 
 [outputs]
-home = ["HTML", "JSON"]
+  home = ["HTML", "JSON"]
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      unsafe = true
+    [markup.goldmark.extensions]
+      footnote = true

@@ -1,0 +1,7 @@
+{{ $fn := .Page.Store.Get "footnotes" }}
+{{ if $fn }}
+<div class="side-footnotes">
+  <h4>Notas</h4>
+  {{ $fn }}
+</div>
+{{ end }}

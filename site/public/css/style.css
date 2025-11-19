@@ -211,6 +211,47 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.4;    /* improves multi-line readability */
 }
 
+.article-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* main content / footnotes */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.article-content {
+  min-width: 0;
+}
+
+/* Footnotes sidebar */
+.article-footnotes {
+  position: sticky;
+  top: 2rem;
+}
+
+.side-footnotes {
+  background: var(--base-bg);
+  border-left: 3px solid var(--neutral-300);
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive: collapse footnotes below content */
+@media (max-width: 999px) {
+  .article-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .article-footnotes {
+    position: relative;
+    top: auto;
+    margin-top: 2rem;
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+
 /* Each author link / name */
 .hero-column .post-author .author-link {
   white-space: nowrap;  /* keep individual names together */
