@@ -291,8 +291,11 @@ h1, h2, h3, h4, h5, h6,
 
 /* Callouts / destacados */ 
 
-.random-callout {
+.callout-wrapper {
   background-color: var(--neutral-pale-blue);
+}
+
+.callout-text {
   color: var(--base-bg);
   font-family: 'Jost';
   font-size: 1.8rem;
@@ -300,25 +303,16 @@ h1, h2, h3, h4, h5, h6,
   padding: 2rem 4rem;
 }
 
-.callout-author {
+.callout-meta {
   background-color: var(--neutral-pale-blue);
   color: var(--base-bg);
   font-family: 'Jost';
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  padding: 0rem 4rem 2rem;
 }
 
 .callout-title {
-  background-color: var(--neutral-pale-blue);
-  color: var(--base-bg);
-  font-family: 'Jost';
-  font-size: 1.3rem;
-}
-
-.callout-date {
-  background-color: var(--neutral-pale-blue);
-  color: var(--base-bg);
-  font-family: 'Jost';
-  font-size: 1.3rem;
+  font-style: italic;
 }
 
 .left-logo-img {
@@ -329,9 +323,8 @@ h1, h2, h3, h4, h5, h6,
   fill: none !important;
 }
 
-
 .share-fixed {
-  border-top: 1px solid;
+  border-top: 1px solid var(--base-bg);
   display: flex;
   justify-content: space-between; /* left logo + right icons */
   align-items: center;
@@ -625,7 +618,7 @@ h1, h2, h3, h4, h5, h6,
   font-size: 1.4rem;
   line-height: 1.4;
   color: #494746;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .article-content-tax {
