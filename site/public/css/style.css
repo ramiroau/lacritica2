@@ -66,8 +66,8 @@ main.homepage {
 
 body {
   background-color: var(--base-bg);
-  font-family: 'Averia Serif Libre', system-ui, -apple-system, sans-serif;
-  font-weight: 400;
+  font-family: 'Averia Serif Libre', system-ui, -apple-system, sans-serif !important;
+  font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.4;
   color: #111;
@@ -106,7 +106,7 @@ body {
 /* Titles and headers */
 h1, h2, h3, h4, h5, h6,
 .banner, .article-list h1, .title {
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', Georgia, serif !important;
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #000;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6,
 .featured-content h1 {
   font-size: 2.2em;
   line-height: 3rem;
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', serif !important;
   font-weight: 700;
   letter-spacing: 0.001em;
   color: #d11534;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .featured-content .summary {
-  font-family: 'Averia Serif Libre', Georgia, serif;
+  font-family: 'Averia Serif Libre', serif !important;
   font-size: 1.2em;
   line-height: 1.8rem;
   font-weight: 400;
@@ -191,11 +191,57 @@ h1, h2, h3, h4, h5, h6,
   margin-top: -2rem; /* move it up slightly */
 }
 
+span.sidenote {
+    /* hide sidenotes in mobile are hidden for now.*/
+    display: none;
+
+    /* sidenotes in desktop */
+    @media (min-width: 960px) {
+        display: block;
+        position: relative;
+        float: right; 
+        clear: right;
+        transform: translateY(-50%);  /* center the sidenote around the sidenote reference.*/
+
+        width: 28%;  /* season to taste */
+        margin: 0;
+        margin-bottom: 1.1rem;
+        margin-top: 1.1rem;
+        margin-right: -35%;
+        padding: 0.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        box-sizing: border-box;
+        text-align: left;
+        background-color: initial;
+
+        /* Use a slighly smaller font and the secondary text color.*/
+        font-size: 80%;
+        line-height: 150%;
+        color: $global-font-secondary-color;
+
+        /* Add a vertical bar on the left side of the comment.*/
+        border: none;
+        border-left-color: #888;
+        border-left-style: solid;
+        border-left-width: 1px;
+    }
+}
+
+span.sidenote small {
+    font-size: 100%;
+}
+
+/* Don't show sidenotes on the home page. */
+.home.posts .content .sidenote {
+    display: none;
+}
+
 /* Container for author list */
 .hero-column .post-author .author-name {
   font-size: .9em;
   margin-bottom: -0.6rem;
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', Georgia, serif !important;
   font-weight: 600;
   color: var(--accent-burgundy);
   letter-spacing: 0.001em;
@@ -206,7 +252,7 @@ h1, h2, h3, h4, h5, h6,
 .hero-column h1 {
   margin-bottom: .5rem;
   font-size: 1.3em;
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', Georgia, serif !important;
   font-weight: 600;
   color: var(--neutral-800);
   letter-spacing: 0.001em;
@@ -223,6 +269,11 @@ h1, h2, h3, h4, h5, h6,
 
 .article-content {
   min-width: 0;
+}
+
+.article-content a {
+    text-decoration: underline;
+    color: black;
 }
 
 /* Footnotes sidebar */
@@ -259,7 +310,7 @@ h1, h2, h3, h4, h5, h6,
   white-space: nowrap;  /* keep individual names together */
   display: inline-block; /* allows wrapping at commas / spaces between authors */
   font-size: 1.1em;
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', serif !important;
   font-weight: 600;
   color: var(--accent-burgundy);
   letter-spacing: 0.001em;
@@ -270,7 +321,7 @@ h1, h2, h3, h4, h5, h6,
 .hero-column .article-content .summary {
   font-size: 1.1rem;
   margin-bottom: 1rem;
-  font-family: 'Averia Serif Libre', Georgia, serif;
+  font-family: 'Averia Serif Libre', serif !important;
   font-weight: 400;
   color: var(--neutral-600);
   letter-spacing: 0.001em;
@@ -282,7 +333,7 @@ h1, h2, h3, h4, h5, h6,
 
 .secondary-grid article h1 {
   font-size: 1.2em;
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', Georgia, serif !important;
   font-weight: 700;
   letter-spacing: 0.001em;
 }
@@ -610,7 +661,7 @@ h1, h2, h3, h4, h5, h6,
 .article-content {
   flex: 2;
   width: 50%;
-  max-width: 650px;
+  max-width: 675px;
   font-size: 1.4rem;
   line-height: 1.4;
   color: #494746;
@@ -701,6 +752,11 @@ h1, h2, h3, h4, h5, h6,
   color: var(--base-bg);
 }
 
+/* un poquito más de espacio en la fecha que etaba muy pegada */
+.secondary-grid .date {
+  margin-top: 1rem;
+}
+
 .article h2,
 .article h3,
 .article h4 {
@@ -708,7 +764,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .article a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 
@@ -1095,7 +1151,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .taxonomy-title {
-  font-family: 'Jost', Georgia, serif;
+  font-family: 'Jost', serif !important;
   font-size: 1.8em;
   font-weight: 900;
   color: #800020;
@@ -1322,6 +1378,15 @@ h1, h2, h3, h4, h5, h6,
   color: #fff;
 }
 
+/* Stack on mobile */
+@media (max-width: 600px) {
+  .footer-social  {
+    width: 100%;
+    flex-direction: column;   /* stack vertically */
+    gap: 1rem;                /* more comfortable spacing */
+  }
+}
+
 .footer-social a img {
   filter: invert(92%) sepia(6%) saturate(212%) hue-rotate(18deg) brightness(103%) contrast(94%);
   width: 44px;    /* adjust as needed */
@@ -1504,31 +1569,47 @@ h1, h2, h3, h4, h5, h6,
 .article-list-right .date {
     font-size: 0.7em;
     color: #999;
-    margin-top: 0.3em;
+    margin-top: 0.3rem;
 }
 
 
 
 .menu, .article-meta, footer, .post-nav { text-align: center; }
 
-/* code */
+/* Outer <pre> block */
 pre {
   border: 1px solid #ddd;
   box-shadow: 5px 5px 5px #eee;
-  overflow-x: auto;
+  background: #f9f9f9;
+  padding: 0.5em;
+  overflow-x: auto;       /* horizontal scroll if needed */
+  white-space: pre-wrap;  /* wrap long lines */
+  word-wrap: break-word;  /* wrap words that are too long */
+  border-radius: 5px;
 }
-code { background: #f9f9f9; }
+
+/* Inline <code> inside <pre> */
 pre code {
   background: none;
-  padding: .5em;
-  display: block;
+  display: block;  /* ensures it fills the <pre> */
+  padding: 0;      /* handled by <pre> */
+  white-space: inherit; /* inherit wrapping behavior */
 }
+
+/* Inline code outside <pre> */
+code {
+  font-size: 1.1rem;
+  background: #f9f9f9;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
 
 /* misc elements */
 img, iframe, video { max-width: 100%; }
 
 blockquote {
-  font-family: 'Averia Sans Libre', system-ui, -apple-system, sans-serif;
+  font-family: 'Averia Sans Libre', system-ui, -apple-system, sans-serif !important;
   color: var(--neutral-600);
   background: var(--base-bg);
   border-left: 10px solid #ccc;

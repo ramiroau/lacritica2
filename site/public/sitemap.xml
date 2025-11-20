@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>//localhost:1313/categories/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/ensayos/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/manual_de_uso/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/post/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/post/c%C3%B3mo-puede-ser-que-siga-jugando-borja/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/categories/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/miscel%C3%A1neas-diez-art%C3%ADculos-que-marcaron-mi-vida-acad%C3%A9mica/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/categories/ensayos/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>//localhost:1313/post/</loc>
+    <loc>//localhost:1313/post/diez-articulos-que-marcaron-mi-vida-academica/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:1313/post/un-pa%C3%ADs-sin-contratos-las-desventuras-del-mercader-de-venecia-en-la-nueva-jurisprudencia-de-la-corte-suprema/</loc>
@@ -127,7 +130,7 @@
   </url><url>
     <loc>//localhost:1313/cont%C3%A1ctenos/</loc>
   </url><url>
-    <loc>//localhost:1313/autores/agustina_ramon_michel/</loc>
+    <loc>//localhost:1313/autores/agustina-ramon-michel/</loc>
   </url><url>
     <loc>//localhost:1313/autores/</loc>
   </url><url>
@@ -153,7 +156,7 @@
   </url><url>
     <loc>//localhost:1313/autores/ramiro-alvarez-ugarte/</loc>
   </url><url>
-    <loc>//localhost:1313/autores/roberto_gargarella/</loc>
+    <loc>//localhost:1313/autores/roberto-gargarella/</loc>
   </url><url>
     <loc>//localhost:1313/autores/sebastian-guidi/</loc>
   </url><url>

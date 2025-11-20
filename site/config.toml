@@ -42,6 +42,7 @@ cleanDestinationDir = true
   weight = 2
 
 [permalinks]
+  post = "/:slug/"
   autores = "/autores/:slug/"
 
 [slug]

@@ -21,7 +21,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 Pero vean, así se usan los em dashes: de una forma coloquial ---cuando los metemos adentro de un texto--- funcionan así. Pero también puede funcionar como fin de una frase --- como si quisiéramos darle cierto énfasis. Locura. Andate Borja. 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit. 
+
+Este es un ejemplo de cómo se pueden usar notas al márgen, cuando uno quiere agregar un contenido al "costado" del camino, como punto de referencia. Está pensado para la lectura en *desktop*, donde el lugar de lectura es ---en general--- amplio y vistoso. Uno puede referir, por ejemplo, a Tufte como el gran inspirador de esta corriente. {{< sidenote >}} Me refiero a Edward Tufte, pionero de la visualización de datos según [Wikipedia](https://en.wikipedia.org/wiki/Edward_Tufte). {{< /sidenote >}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

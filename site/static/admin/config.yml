@@ -22,6 +22,13 @@ collections:
 
     fields:
       - { label: "Title", name: "title", widget: "string" }
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "lo-que-va-ser-la-url-sin-acentos-ni-letras-con-simbolos-tipo-la-que-se-parece-a-la-n-con-bigote"
+        pattern: ['^[a-z0-9-]+$', "Solo minúsculas, números y guiones"]
+
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - label: "Description"
         name: "description"
@@ -137,6 +144,12 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "lo-que-va-ser-la-url-sin-acentos-ni-letras-con-simbolos-tipo-la-que-se-parece-a-la-n-con-bigote"
+        pattern: ['^[a-z0-9-]+$', "Solo minúsculas, números y guiones"]
 
       - label: "Description"
         name: "description"

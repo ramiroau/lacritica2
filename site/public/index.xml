@@ -6,8 +6,15 @@
     <description>Recent content in La Crítica del derecho on La Crítica</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manual de uso</title>
+      <link>//localhost:1313/post/manual_de_uso/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/manual_de_uso/</guid>
+      <description>&lt;p&gt;Este documento explica algunas peculiaridades del uso de La Crítica del Derecho, un sitio basado en &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, un &lt;em&gt;framework&lt;/em&gt; para sitios estáticos construido en Go. Está hosteado en Netlify para poder tener un administrador de contenido accesible.&lt;/p&gt;&#xA;&lt;p&gt;Hugo permite un nivel casi total de customización. Hay algunas características del sitio que necesitan entender cómo se pueden &amp;ldquo;activar&amp;rdquo; esas características. Las mismas son optativas, y quedan a elección del autor / editor usarlas o no. Pero, en caso de querer usarlas, es sencillo hacerlo y requiere entender brevemente qué son los &lt;code&gt;shortcodes&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>¿Cómo puede ser que siga jugando Borja en River Plate?</title>
       <link>//localhost:1313/post/c%C3%B3mo-puede-ser-que-siga-jugando-borja/</link>
@@ -17,9 +24,9 @@
     </item>
     <item>
       <title>Diez artículos que marcaron mi vida académica</title>
-      <link>//localhost:1313/post/miscel%C3%A1neas-diez-art%C3%ADculos-que-marcaron-mi-vida-acad%C3%A9mica/</link>
+      <link>//localhost:1313/post/diez-articulos-que-marcaron-mi-vida-academica/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/miscel%C3%A1neas-diez-art%C3%ADculos-que-marcaron-mi-vida-acad%C3%A9mica/</guid>
+      <guid>//localhost:1313/post/diez-articulos-que-marcaron-mi-vida-academica/</guid>
       <description>&lt;p&gt;Presento, a continuación, 10 artículos que marcaron mi trayectoria como académico (en realidad, son 8 artículos, y 2 largos ensayos, devenidos en sendos libros). Con distancia advierto, como notas comunes a los escritos que destaco, que se trata de textos redactados de una manera sencilla y comprensible; referidos (más o menos directamente) a temas de primer interés público; y orientados a “intervenir” en la vida política. Los menciono y cuento un poco de mi relación con ellos.&lt;/p&gt;</description>
     </item>
     <item>
@@ -234,9 +241,9 @@
     </item>
     <item>
       <title>Agustina Ramón Michel</title>
-      <link>//localhost:1313/autores/agustina_ramon_michel/</link>
+      <link>//localhost:1313/autores/agustina-ramon-michel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/autores/agustina_ramon_michel/</guid>
+      <guid>//localhost:1313/autores/agustina-ramon-michel/</guid>
       <description>&lt;p&gt;Investigo temas de derecho, género y salud ante todo, pero no solamente. Me gusta hacerlo de manera empírica y teórica. Es probable que conozca más profesionales de la salud que abogados. Fui aprendiendo de América Latina. Trabajo en el CEDES y en la Universidad de Palermo, también doy clases en la UBA. Me gradué de abogada en la UNT, Tucumán, hace casi 20 años pero todavía me aspiro las S.&lt;/p&gt;</description>
     </item>
     <item>
@@ -311,9 +318,9 @@
     </item>
     <item>
       <title>Roberto Gargarella</title>
-      <link>//localhost:1313/autores/roberto_gargarella/</link>
+      <link>//localhost:1313/autores/roberto-gargarella/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/autores/roberto_gargarella/</guid>
+      <guid>//localhost:1313/autores/roberto-gargarella/</guid>
       <description>&lt;p&gt;Hijo de campesinos italianos. Académico a tiempo completo. Doctor en derecho x 2. Sociólogo. Escribir, sacar fotos y mirar cine, todo el tiempo. Racing. Helados. Y ya que estamos, socialismo para superar la fase predatoria de la humanidad.&lt;/p&gt;</description>
     </item>
     <item>

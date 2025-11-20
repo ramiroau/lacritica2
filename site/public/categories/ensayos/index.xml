@@ -6,8 +6,15 @@
     <description>Recent content in Ensayos on La Crítica</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/categories/ensayos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manual de uso</title>
+      <link>//localhost:1313/post/manual_de_uso/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/post/manual_de_uso/</guid>
+      <description>&lt;p&gt;Este documento explica algunas peculiaridades del uso de La Crítica del Derecho, un sitio basado en &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;, un &lt;em&gt;framework&lt;/em&gt; para sitios estáticos construido en Go. Está hosteado en Netlify para poder tener un administrador de contenido accesible.&lt;/p&gt;&#xA;&lt;p&gt;Hugo permite un nivel casi total de customización. Hay algunas características del sitio que necesitan entender cómo se pueden &amp;ldquo;activar&amp;rdquo; esas características. Las mismas son optativas, y quedan a elección del autor / editor usarlas o no. Pero, en caso de querer usarlas, es sencillo hacerlo y requiere entender brevemente qué son los &lt;code&gt;shortcodes&lt;/code&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>¿Cómo puede ser que siga jugando Borja en River Plate?</title>
       <link>//localhost:1313/post/c%C3%B3mo-puede-ser-que-siga-jugando-borja/</link>
@@ -17,9 +24,9 @@
     </item>
     <item>
       <title>Diez artículos que marcaron mi vida académica</title>
-      <link>//localhost:1313/post/miscel%C3%A1neas-diez-art%C3%ADculos-que-marcaron-mi-vida-acad%C3%A9mica/</link>
+      <link>//localhost:1313/post/diez-articulos-que-marcaron-mi-vida-academica/</link>
       <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/post/miscel%C3%A1neas-diez-art%C3%ADculos-que-marcaron-mi-vida-acad%C3%A9mica/</guid>
+      <guid>//localhost:1313/post/diez-articulos-que-marcaron-mi-vida-academica/</guid>
       <description>&lt;p&gt;Presento, a continuación, 10 artículos que marcaron mi trayectoria como académico (en realidad, son 8 artículos, y 2 largos ensayos, devenidos en sendos libros). Con distancia advierto, como notas comunes a los escritos que destaco, que se trata de textos redactados de una manera sencilla y comprensible; referidos (más o menos directamente) a temas de primer interés público; y orientados a “intervenir” en la vida política. Los menciono y cuento un poco de mi relación con ellos.&lt;/p&gt;</description>
     </item>
     <item>
