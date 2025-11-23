@@ -6,7 +6,10 @@ categories:
   - reseñas
 author: 
   - Ramiro Álvarez Ugarte
-thumbnail: /img/hla.png
+thumbnail: 
+  - src: "/img/hla.png"
+    epigraph: "Pared de Marruecos, 2024"
+    copyright: "por Roberto Gargarella"
 highlight: false
 obra_reseñada: "Nicola Lacey, A Life of H.L.A. Hart: The Nightmare and the Noble Dream (Oxford University Press, 2006)."
 callouts:

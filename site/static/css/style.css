@@ -68,7 +68,7 @@ body {
   background-color: var(--base-bg);
   font-family: 'Averia Serif Libre', system-ui, -apple-system, sans-serif !important;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   color: #111;
 }
@@ -147,25 +147,63 @@ h1, h2, h3, h4, h5, h6,
 
 }
 
-.secondary-grid .article {
-  display: flex;
-  flex-direction: column; /* keep elements stacked vertically */
-}
-
-.secondary-grid .article .featured-thumbnail {
-  width: 90%;       /* full width of the article container */
-  aspect-ratio: 3 / 2;
-  overflow: hidden;
-  margin: 1rem;         /* remove default margins */
-  padding: 0;
-}
-
-.secondary-grid .article .featured-thumbnail img {
+.site-container, /* whatever parent wraps the page */ 
+.home-featured, 
+.secondary-grid {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  max-width: 1200px;   /* site-wide max width */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 1rem;  /* optional page padding */
+  padding-right: 1rem; /* optional page padding */
 }
+
+/* 2) Secondary grid layout: use safe grid sizing */
+.secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--gutter, 1rem);
+  column-gap: 0.8rem;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+  box-sizing: border-box;
+}
+
+/* 3) Ensure each article is a column and does not overflow */
+
+/* 4) Thumbnail container: full width of its column, fixed aspect, no margins */
+.secondary-grid .article .featured-thumbnail {
+  width: 100%;           /* fill the grid column */
+  max-width: 100%;       /* never exceed the column */
+  aspect-ratio: 3 / 2;   /* keep ratio */
+  overflow: hidden;      /* crop overflow */
+  margin: 0;             /* remove extra space that enlarges layout */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 5) Image: fill the container but obey max-width, preserve cropping */
+.secondary-grid .article .featured-thumbnail img {
+  display: block;
+  width: 100%;           /* fill container */
+  height: 100%;          /* required for object-fit cropping */
+  max-width: 100%;       /* safety */
+  object-fit: cover;
+}
+
+/* 6) If you want smaller thumbnails visually, reduce the column width on large screens */
+@media (min-width: 1201px) {
+  .secondary-grid { grid-template-columns: repeat(3, 1fr); } /* unchanged */
+}
+@media (max-width: 1100px) {
+  /* make right/left adjustments for mid screens if desired */
+  .secondary-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .secondary-grid { grid-template-columns: 1fr; }
+}
+
 
 .hero-feature {
   background: #f9f9f9;
@@ -217,19 +255,19 @@ h1, h2, h3, h4, h5, h6,
 /* home callouts */ 
 
 .home-featured {
-  display: flex;                /* Flexbox container */
-  gap: 6rem;                    /* space between elements */
-  align-items: center;          /* vertical alignment */
-  justify-content: space-between; /* distribute horizontally */
-  margin-top: 2rem;
-  max-width: 1200px;
-  width: 100%;                   /* full width inside container */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  max-width: 1200px;
+  width: 100%;
+  gap: 6rem;
 }
+
 
 .home-featured-left {
   flex: 0 0 70%; /* width: 60% */
-  margin-left: 2rem;
 }
 
 /* --- RIGHT COLUMN WRAPPER --- */
@@ -315,12 +353,10 @@ h1, h2, h3, h4, h5, h6,
 
 /* Stack on mobile */
 
-
 .home-featured-left .home-callouts {
   position: relative;
   padding: 1rem;
   width: 100%;
-  margin-left: 0rem;
   margin-right: auto;  /* pushes it left */
 }
 
@@ -367,6 +403,10 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0rem;
 }
 
+.callout-meta span:not(:last-child)::after {
+  content: ", ";
+}
+
 .open-quote,
 .close-quote {
   position: absolute;
@@ -393,98 +433,96 @@ h1, h2, h3, h4, h5, h6,
 }
 
 /* Stack on mobile */
-
-/* TABLET BREAKPOINT (MacBook half window) */
-@media (max-width: 1100px) and (min-width: 769px) {
-  .home-featured {
-    gap: 1rem;
-  }
-
-  /* Make the right side narrower on mid-sized screens */
-  .home-featured-left {
-    flex: 0 0 70%;   /* increase left */
-  }
-
-  .home-featured-right {
-    flex: 0 0 30%;   /* shrink right */
-    padding: 1rem;   /* reduce padding so it doesn't explode */
-  }
-
-  /* Optional: shrink images so they don't blow up the box */
-  .home-featured-right .misc-thumbnail img {
-    max-width: 70%;
-  }
-}
-
+/* -------------------------------------------- */
+/* MOBILE RESPONSIVE BREAKPOINT */
+/* -------------------------------------------- */
 
 @media (max-width: 768px) {
+
+  /* STACK COLUMNS */
   .home-featured {
-    margin-top: 0rem;
     flex-direction: column;
     gap: 0rem;
+    padding: 0 1rem;
   }
+
   .home-featured-left,
   .home-featured-right {
-    flex: 1 1 100%;
-    margin-top: 0.5rem; /* optional spacing */
+    flex: 0 0 100%;
+    width: 100%;
   }
+
+  /* RIGHT COLUMN: CLEARER BACKGROUND GRADIENT */
+  .home-featured-right {
+    background: linear-gradient(
+      to bottom,
+      transparent 30%,
+      var(--neutral-300) 30%
+    );
+
+    padding: 1rem;
+  }
+
+  /* INNER CARD PADDING REDUCED */
+  .home-featured-inner {
+    padding: 1rem;
+  }
+
+  /* CALL OUT */
   .home-callout {
     padding: 0rem;
   }
-  .home-callout .callout-meta {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: .9rem;
-  gap: 0rem;
-  opacity: 0.8;
-}
 
-.home-callout span {
-  margin-top: 0rem;
-  display: inline-block;
-}
-
-.open-quote,
-.close-quote {
-  position: absolute;
-  z-index: 0;
-  opacity: 0.4 ; /* optional, aesthetic */
-}
-
-.open-quote {
-  top: 10px;
-  left: 20px;
-}
-
-.close-quote {
-  bottom: 18px;
-  right: 20px;
-}
-.open-quote img {
-  max-height: 60px;
-}
-
-.close-quote img {
-  max-height: 60px;
-  align-items: right;
-}
   .home-callout .callout-text {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  text-align: left !important;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 1rem 2rem;
+  }
+
+.home-callout .callout-meta {
+  white-space: normal;       /* allow wrapping when necessary */
+  font-size: .9rem;
+  line-height: 1.1;
+  padding: 1rem 2rem;
 }
-  .home-featured-right .misc-posts {
-    text-align: center;
+
+/* keep specific tokens together */
+.home-callout .callout-meta .no-break {
+  white-space: nowrap;
+  display: inline-block;    /* keeps its content on one line */
+}
+
+  /* QUOTE SVGs SCALE DOWN */
+  .open-quote img,
+  .close-quote img {
+    max-height: 60px;
   }
-  .home-featured-right .misc-posts .misc-thumbnail img {
-    display: block;       /* important so margin auto works */
-    margin-left: auto;
-    margin-right: auto;
+
+  .open-quote {
+    top: -12px;
+    left: 10px;
   }
-  .secondary-grid {
-    margin-top: 2rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
+
+  .close-quote {
+    bottom: -4px;
+    right: 10px;
+  }
+
+  /* THUMBNAILS */
+  .home-featured-right .misc-thumbnail img {
+    border-width: 1px;
+  }
+
+  /* TITLES */
+  .home-featured-right .misc-title {
+    font-size: 1rem;
+  }
+
+  /* AUTHOR + DATE */
+  .home-featured-right .misc-author,
+  .home-featured-right .misc-date {
+    font-size: 0.8rem;
+
   }
 }
 
@@ -1038,13 +1076,31 @@ span.sidenote small {
 .article {
   background: var(--base-bg);
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .secondary-grid .article {
+  margin-top: 1rem;
   background: var(--accent-burgundy);
   padding: 1rem;
-  border-radius: 8px;
+  border-right: 1px solid var(--neutral-300);
+}
+
+@media (max-width: 768px) {
+  .secondary-grid .article {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .taxonomy-grid.secondary-grid .article {
+    border-right: none;
+  }
+}
+
+/* Remove last column borders */
+.secondary-grid .article:nth-child(3n) {
+  border-right: none;
 }
 
 .secondary-grid .article h1,
@@ -1466,11 +1522,31 @@ span.sidenote small {
   /* choose a neutral background or inherit from taxonomy layout */
   background-color: transparent; /* or var(--base-bg) if you prefer */
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* or whatever your layout needs */
+  grid-template-columns: repeat(3, 1fr); /* or whatever your layout needs */
   gap: var(--gutter);
-  margin-top: 0rem;
+  margin-top: 1rem;
   padding-bottom: 3rem;
   box-sizing: border-box;
+}
+
+.taxonomy-grid .grid-thumbnail {
+  width: 100%;           /* fill the grid column */
+  max-width: 100%;       /* never exceed the column */
+  aspect-ratio: 3 / 2;   /* keep ratio */
+  overflow: hidden;      /* crop overflow */
+  margin: 0;             /* remove extra space that enlarges layout */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.taxonomy-grid .grid-thumbnail img {
+  display: block;
+  object-fit: cover;      /* crop the excess */
+  object-position: top;   /* <-- crop from the TOP */
+  width: 100%;           /* fill container */
+  height: 100%;          /* required for object-fit cropping */
+  max-width: 100%;       /* safety */
 }
 
 .taxonomy-grid .article-content {
@@ -1479,6 +1555,16 @@ span.sidenote small {
   font-size: 1.4rem;
   line-height: 1.4;
   color: #494746;
+}
+
+.taxonomy-grid .article {
+  border-right: 1px solid var(--neutral-300);
+  padding: 1rem;
+}
+
+/* Remove last column borders */
+.taxonomy-grid .article:nth-child(3n) {
+  border-right: none;
 }
 
 /* If you used the additive class (taxonomy-grid secondary-grid), override the magenta */
@@ -1527,10 +1613,31 @@ span.sidenote small {
   background-color: var(--accent-burgundy); /* warm beige */
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pagination a {
+  padding: 0.4rem 0.7rem;
+  text-decoration: none;
+  border: 1px solid var(--neutral-400);
+  border-radius: 4px;
+  color: var(--base-bg);
+}
+
+.pagination .active {
+  background: var(--neutral-800);
+  color: white;
+}
+
+
 /* --- Mobile responsive --- */
 @media screen and (max-width: 1070px) {
 
-    .taxonomy-layout {
+  .taxonomy-layout {
     grid-template-columns: 1fr; /* full width */
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1542,8 +1649,25 @@ span.sidenote small {
   }
 
   .taxonomy-grid.secondary-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
+  .taxonomy-grid h1 {
+  margin-top: 0rem;
+}
+
+.taxonomy-grid .grid-thumbnail {
+  float: right;
+  display: inline-block;
+  border: 1px solid var(--base-bg);
+  vertical-align: top;
+  width: 100px;            /* or any width */
+  margin: 0rem 1rem 0rem zrem; /* space around image */
+}
+
+.taxonomy-grid .grid-thumbnail img {
+  width: 100%;
+  height: auto;
+}
 }
 
 /* --- Mobile responsive --- */
@@ -1566,6 +1690,31 @@ span.sidenote small {
   .secondary-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .taxonomy-grid {
+    background-color: var(--accent-burgundy);
+    padding: 2rem 0;   /* increase vertical background area */
+}
+    .taxonomy-grid.secondary-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .taxonomy-grid h1 {
+  margin-top: 0rem;
+}
+
+.taxonomy-grid .grid-thumbnail {
+  float: right;
+  display: inline-block;
+  border: 1px solid var(--base-bg);
+  vertical-align: top;
+  width: 100px;            /* or any width */
+  margin: 0rem 0rem 0rem zrem; /* space around image */
+}
+
+.taxonomy-grid .grid-thumbnail img {
+  width: 100%;
+  height: auto;
+}
 }
 
 /* página de autores */

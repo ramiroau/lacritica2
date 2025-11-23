@@ -75,11 +75,12 @@
       {{ end }}   
 
 <div class="obra_reseñada">
-  {{ with $.Params.thumbnail }}
+  {{ with index $.Params.thumbnail 0 }}
     <div class="book-cover">
-      <img src="{{ relURL . }}" alt="Featured Image"/>
+      <img src="{{ relURL .src }}" alt="Featured Image"/>
     </div>
   {{ end }}
+</div>
 
   {{ with $.Params.obra_reseñada }}
     <div class="obra-text">{{ . }}</div>

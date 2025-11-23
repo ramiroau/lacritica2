@@ -8,7 +8,10 @@ author:
   - Ramiro Álvarez Ugarte
 highlight: false
 highlight2: false  
-thumbnail: /img/ranciere.webp
+thumbnail: 
+  - src: "/img/ranciere.webp"
+    epigraph: "Pared de Marruecos, 2024"
+    copyright: "por Roberto Gargarella"
 obra_reseñada: "Rancière, Jacques. Staging the people: The proletarian and his
   double. Verso Books, 2011."
 callouts:
