@@ -1,7 +1,6 @@
 
 {{ partial "header.html" . }}
 
-<div class="container-article">
 <article>
 
 <main class="article-layout">
@@ -74,20 +73,6 @@
       <div class = twitter-handle> <a href="https://x.com/{{ . }}" target="_blank">@{{ . }}</a></div>
       {{ end }}   
 
-<div class="obra_reseñada">
-  {{ with index $.Params.thumbnail 0 }}
-    <div class="book-cover">
-      <img src="{{ relURL .src }}" alt="Featured Image"/>
-    </div>
-  {{ end }}
-</div>
-
-  {{ with $.Params.obra_reseñada }}
-    <div class="obra-text">{{ . }}</div>
-  {{ end }}
-</div>
-
-
       </div>
       {{ end }}
       </div>
@@ -115,10 +100,34 @@
     {{ partial "share.html" . }}
 
 
+
+
+<div class = "title-obra-resenada">
+<h4>Obra reseñada</h4></div>
+        <div class="obra_reseñada">
+  {{ with index $.Params.thumbnail 0 }}
+    <div class="book-cover">
+      <img src="{{ relURL .src }}" alt="Featured Image"/>
+    </div>
+  {{ end }}
+
+
+  {{ with $.Params.obra_reseñada }}
+    <div class="obra-text">{{ . }}</div>
+  {{ end }}
+</div>
+</div>
+
     {{ with .Params.category }}
       <p class="post-category">{{ . }}</p>
     {{ end }}
   </div>
+
+
+</div>
+
+
+
 
   <div class="article-content">
     {{ .Content }}
@@ -131,6 +140,6 @@
 {{ partial "prev_next.html" . }}
 {{ partial "comments.html" . }}
 </article>
-</div>
+
 
 {{ partial "footer.html" . }}

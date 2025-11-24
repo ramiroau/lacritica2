@@ -974,30 +974,36 @@ span.sidenote small {
 
 /* for reseñas */ 
 
+.title-obra-resenada {
+  margin-top: 4rem;
 
-.article-sidebar .obra_reseñada {
-  border-top: 1px solid var(--border-color, #ddd);
-  margin-top: 5rem;
-  flex: 1 1 50%; /* grow, shrink, base width */
-  max-width: 100%;
+  }
+.obra_reseñada {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: row;   /* horizontal layout */
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 1rem;             /* spacing between image and text */
 }
 
+/* cover stays on the left */
 .book-cover img {
-  box-shadow: 8px 0 6px rgba(0, 0, 0, 0.3); /* rightward shadow */
-  border: 1px solid var(--neutral-200);
-  margin-top: 2rem;
-  max-width: 200px;
+  max-width: 100px;      /* fixed size keeps layout stable */
   height: auto;
+  box-shadow: 8px 0 12px rgba(0, 0, 0, 0.3);
 }
 
+/* text on the right */
 .obra-text {
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--neutral-600);
+  color: #333;
+  text-align: left;      /* left-align for readability */
+  line-height: 1.4;
+  max-width: calc(100% - 100px - 1rem);
 }
+
+
 
 .article-content {
   flex: 2;
@@ -1023,7 +1029,7 @@ span.sidenote small {
 
 .container-article {
   padding: 1rem 6rem 0;
-  }
+}
 /* llevar a media */
 
 @media (max-width: 900px) {
@@ -1537,6 +1543,8 @@ span.sidenote small {
   margin: 0;             /* remove extra space that enlarges layout */
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+
 }
 
 
