@@ -1,6 +1,6 @@
 ---
 title: Mariela Puga
-slug: marielapuga
+slug: mariela-puga
 type: authors
 foto: /img/foto-.jpg
 bio: "Investigadora de CONICET, Profesora de Derecho Constitucional en la UNC. "
