@@ -10,13 +10,12 @@ author:
   - Mariela Puga
 highlight: false
 highlight2: false
-publicado_originalmente_en: Publicado originalmente en lacritica.ar
 ---
 Me resulta particularmente extraña la incomprensión de un argumento tan simple, tan directo, como el argumento que el feminismo opone a la interpretación originalista de la constitución. Cuando una se pregunta varias veces ¿qué no se ve de lo obvio?, quizás es tiempo de hacerse la pregunta de otra manera, u otro tipo de preguntas. Por ejemplo, ¿qué temores, o qué incapacidades constitutivas se manifiestan en la incapacidad de advertir el conservadurismo reaccionario del originalismo? ¿Qué barrera estructural se opone a la conversación con el punto de vista feminista? 
 
 En este breve ensayo intentaré hacer inteligible una intuición que llamo la “exclusión constitutiva”. Esto es, la intuición de que hay un sentido común constitucional desde el que se vuelve ininteligible la crítica feminista. Y que ese sentido, deviene de la circunstancia histórica de la exclusión originaria de las mujeres en el surgimiento y desarrollo del constitucionalismo. Simple.
 
-**El planteo que no se entiende**
+# El planteo que no se entiende
 
 El feminismo rechaza la devoción hacia un pasado en el que de forma explícita y motivada se proscribió de las mujeres (e indígenas) del mundo público, tal, el pasado constituyente de mediados del siglo XIX (el que además se despliega por casi un siglo más de proscripción sexual). ¿Qué parte de éste rechazo no es asequible? Exploremos el asunto…
 
@@ -46,7 +45,7 @@ Lo que se sostiene, sencillamente, es que necesitamos dejar de creer “tan fres
 
 La mirada misógina de los modernos determinó lo que entendemos por “libertad”, por “autonomía”, y sobre todo, lo que entendemos por “lo constitucional”, y “lo privado”. Si no nos damos cuenta de eso, seguiremos apañando el uso de la constitución para la opresión y la subalternidad social. Por eso, déjenme intetnar probar, con un “botón” que me sirve de ejemplo, en el corto espacio que queda.
 
-**Para ejemplo, un botón** 
+# Para ejemplo, un botón
 
 Hace un año atrás discutíamos los peligros de las posiciones originalistas del entonces candidato a la Corte Suprema de Justicia de la Nación, Manuel García Mansilla (del que por suerte, nos salvamos\!\!\!). Varias criticamos sus ideas contrarias a los derechos de las mujeres, y lo hicimos también en una audiencia pública que tuvo lugar en la Cámara de Diputados. En mi caso, intente explicar a los legisladores, que el origen de sus fallas interpretativas (respecto al derecho de las mujeres), tenía que rastrearse en las fallas de su método interpretativo, el originalismo, al que critiqué abiertamente como un método “reaccionario”. 
 
@@ -60,7 +59,7 @@ Déjenme agregar un matiz de inteligibilidad a ese “botón”. Lejanamente rec
 
 Lo que siempre me inquieto de aquel relato, es que no derivó de él la idea de que entonces había un derecho constitucional al aborto. El acontecimiento del intento fracasado, no significó para él (cuyo bando no cuesta adivinar), que el aborto quedaba así comprendido entre las acciones privadas “de los hombres” del artículo 19 de la Constitución Nacional. Muy por el contrario, el razonamiento de muchos siguió siendo que como en el siglo XIX se quiso que el aborto no fuera una cuestión “constitucional”, así seguía. No era inconstitucional prohibirlo, ni las mujeres podían invocar un derecho constitucional a que no se prohíba.[^5] Sólo podían luchar por conquistar un derecho infraconstitucional (como afortunadamente lo hicieron) en contra de la prohibición infra-constitucional. Pero el asunto seguía sin ser parte de la constitución, ya que así lo determinó la mirada misógina que sancionó los límites de lo constitucional, desde las expectativas de los varones no subalternados en el siglo XIX. ¿Se entiende el matiz del mismo punto? 
 
-**La exclusión constitutiva**
+# La exclusión constitutiva
 
 Sabemos demasiado poco de las raíces y lógicas de la misoginia de nuestros padres fundadores, y mucho menos ha interesado indagar como ella impregnó sentido al constitucionalismo argentino. Vale entonces señalar, que los estudios sobre la edad media, por ejemplo, develan que la creencia en la inferioridad de las mujeres se vinculaba a su supuesta falta de “autocontrol”. El “autocontrol” era la virtud definitoria del individuo moral del humanismo, el que devendría en ciudadano moderno. Las mujeres, consideradas un ser malicioso, en especial peligrosos por sus poderes seductores, amenazaban el “autocontrol” del individuo varón, al que debía protegerse de ellas para resguardar su virtud moral, que en el humanismo era también social, y en la modernidad será política. 
 

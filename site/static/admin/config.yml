@@ -94,6 +94,7 @@ collections:
       - label: "Publicado originalmente en"
         name: "publicado_originalmente_en"
         widget: "string"
+        required: false
         hint: "Dónde fue publicado originalmente la pieza (admite markdown links internos)"
 
       - { label: "Body", name: "body", widget: "markdown" }
@@ -124,8 +125,8 @@ collections:
 
       - { label: "Type", name: "type", widget: "hidden", default: "authors" }
 
-      - label: "Foto"
-        name: "foto"
+      - label: "thumbnail"
+        name: "thumbnail"
         widget: "image"
         choose_url: true
         hint: "Subir la foto del perfil del autor (se guarda en static/img)"
@@ -139,6 +140,11 @@ collections:
         name: "twitter_handle"
         widget: "string"
         hint: "Usuario de Twitter (sin arroba)"
+
+      - label: "ORCID"
+        name: "orcid"
+        widget: "string"
+        hint: "Número de ORCID (si se quiere)"
 
       - label: "Bio más larga"
         name: "body"
@@ -219,6 +225,7 @@ collections:
       - label: "Pulbicado originalmente en"
         name: "publicado_originalmente_en"
         widget: "string"
+        required: false
         hint: "Dónde fue publicado originalmente la pieza (admite markdown links internos)"
 
       - { label: "Body", name: "body", widget: "markdown" }
