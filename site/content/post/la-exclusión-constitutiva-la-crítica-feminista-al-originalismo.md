@@ -1,9 +1,9 @@
 ---
-title: La exclusión constitutiva. La crítica feminista al originalismo.
+title: La exclusión constitutiva.  La crítica feminista al originalismo.
 slug: la-exclusion-constitutiva-la-critica-feminista-al-originalismo
 date: 2025-11-25T20:50:22.410Z
 description: Este ensayo discurre sobre cuál es, y porqué cuesta entender, la
-  crítica feminista a la propuesta de interpretación constitucional originalista
+  crítica feminista al método de interpretación constitucional originalista.
 categories:
   - ensayos
 author:
@@ -13,7 +13,7 @@ highlight2: false
 ---
 Me resulta particularmente extraña la incomprensión de un argumento tan simple, tan directo, como el argumento que el feminismo opone a la interpretación originalista de la constitución. Cuando una se pregunta varias veces ¿qué no se ve de lo obvio?, quizás es tiempo de hacerse la pregunta de otra manera. Por ejemplo, ¿qué barrera de sentido se opone a la conversación con el punto de vista feminista?
 
-En este breve ensayo intentaré hacer inteligible una intuición que llamo la de “la exclusión constitutiva”. Esto es, la intuición de que hay un sentido común sobre “lo” constitucional desde el que se vuelve ininteligible la crítica feminista. Lo más importante es, que ese sentido surge de las circunstancias históricas de la exclusión. 
+En este breve ensayo intentaré hacer inteligible una intuición a la que llamo “la exclusión constitutiva”. Esto es, la intuición de que hay un sentido común sobre “lo” constitucional desde el cual se hace ininteligible a la crítica feminista. Lo más importante, es que ese sentido surge de las circunstancias históricas de la exclusión originaria de las mujeres del sistema constitucional. 
 
 **El planteo de lo obvio**
 
