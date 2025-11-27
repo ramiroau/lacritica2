@@ -892,7 +892,7 @@ span.sidenote small {
 
   .author-bio,
   .twitter-handle {
-    text-align: center;
+    text-align: left;
   }
 
   /* Center date */
@@ -1959,11 +1959,19 @@ span.sidenote small {
 /* --- Layout: sidebar + authors area --- */
 
 .article-layout-authors {
+  margin-top: 2rem;
+  margin-right: 2rem;
   display: grid;
-  grid-template-columns: 1fr 4fr;  /* wider author grid */
+  grid-template-columns: 1fr 6fr;  /* wider author grid */
   gap: 2rem;
+  padding-left: 2rem;
   align-items: start;
 }
+
+.article-layout-authors. .article-sidebar .post-title {
+  max-width: 200px;
+}
+
 
 /* --- Main authors grid --- */
 .authors-grid {

@@ -1,5 +1,5 @@
 ---
-title: La exclusión constitutiva.  La crítica feminista al originalismo.
+title: La exclusión constitutiva. La crítica feminista al originalismo
 slug: la-exclusion-constitutiva-la-critica-feminista-al-originalismo
 date: 2025-11-25T20:50:22.410Z
 description: Cuál es la razón, y porqué cuesta entender la crítica feminista al

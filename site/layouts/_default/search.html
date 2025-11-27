@@ -4,12 +4,6 @@
 
 <div class="search-layout">
 
-  <!-- Sidebar for filters -->
-  <aside class="search-sidebar">
-    <h2>Filtros</h2>
-    <div id="search-filters"></div>
-  </aside>
-
   <!-- Pagefind results and search box -->
   <div class="search-main">
     <div id="search"></div>
@@ -17,20 +11,29 @@
 
 </div>
 
-<!-- Pagefind assets -->
 <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="/pagefind/pagefind-ui.js"></script>
 
 <script>
-  new PagefindUI({
+  const pagefind = new PagefindUI({
     element: "#search",
-    filters: {
-      // Tell Pagefind where to render the filters UI
+    showSubResults: true,
+    autofocus: true,
+
+    filterUI: {
       container: "#search-filters"
     },
-    showSubResults: true,
-    autofocus: true
+
+    translations: {
+      filter_author_label: "Autores",
+      filter_categories_label: "Categorías"  // optional
+
+    }
   });
+
+  // Make filters always visible
+  pagefind.setTerm("");
 </script>
+
 
 {{ end }}

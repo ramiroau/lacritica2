@@ -91,15 +91,6 @@ collections:
           name: "phrase"
           widget: "string"
 
-      - label: "Featured frases destacada"
-        name: "featured_callout"
-        widget: "list"
-        hint: "Frases destacada que va a la Home"
-        field:
-          label: "Frase"
-          name: "phrase"
-          widget: "string"
-
       - label: "Publicado originalmente en"
         name: "publicado_originalmente_en"
         widget: "string"

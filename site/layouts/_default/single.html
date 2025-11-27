@@ -4,7 +4,7 @@
 
 <main class="article-layout">
 
-  <aside class="article-sidebar" data-pagefind-ignore>
+  <aside class="article-sidebar">
     <h1 class="post-title">{{ .Title }}</h1>
 
     {{ with .Params.author }}
@@ -53,7 +53,7 @@
       {{ end }}
 
       <div class="author-block">
-        <h3 class="author-name">
+        <h3 class="author-name" data-pagefind-filter="author">
           <a class="author-link" href="{{ (print "/autores/" $authorSlug) | relURL }}">
             {{ $authorClean }}
           </a>
@@ -119,7 +119,7 @@
     {{ end }}
 
     {{ with .Params.category }}
-      <p class="post-category" data-pagefind-ignore>{{ . }}</p>
+      <p class="post-category">{{ . }}</p>
     {{ end }}
   </aside> <!-- /.article-sidebar -->
 

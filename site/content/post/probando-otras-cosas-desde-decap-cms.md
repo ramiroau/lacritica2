@@ -5,7 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do ei
 categories:
   - reseñas
 author:
-  - Ramiro Alvarez Ugarte
+  - Ramiro Álvarez Ugarte
 thumbnail: 
   - src: "/img/whatsapp-image-2025-11-12-at-22.56.06.jpeg"
     epigraph: "Pared de Marruecos, 2024"
