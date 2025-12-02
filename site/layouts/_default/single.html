@@ -92,8 +92,10 @@
       {{ $month := index $months (.Format "January") }}
       <p class="post-date">{{ .Day }} de {{ $month }} de {{ .Year }}</p>
     {{ end }}
-
+    
+    {{ if not .Params.skip_partial }}
     {{ partial "share.html" . }}
+    {{ end }}
 
     {{ if and (isset .Params "thumbnail") (isset .Params "obra_reseñada") }}
       <div class="title-obra-resenada" data-pagefind-ignore>

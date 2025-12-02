@@ -15,7 +15,7 @@
         {{ range .Pages }}
 <article class="pirulos-item">
 
-  <a href="{{ .RelPermalink }}" class="pirulos-link">
+  <!--<a href="{{ .RelPermalink }}" class="pirulos-link">--><!--this eliminates the link to each single piece-->
 
     <div class="pirulos-row">
 
@@ -40,7 +40,7 @@
 
     </div>
 
-  </a>
+  <!--</a>-->
 
 </article>
 {{ end }}
@@ -120,6 +120,8 @@
 .pirulos-thumbnail {
   padding-right: 2rem;
   border-right: 1px solid var(--divider-color, #ccc);
+  flex: 0 0 auto;
+
 }
 
 .pirulos-thumbnail img {
@@ -130,23 +132,56 @@
   display: block;
 }
 
-
-
 .pirulos-text h2 {
+  flex: 1 1 auto;
   margin-top: 0;
   font-family: 'Jost';
   font-weight: 700;
 }
 
-@media (max-width: 800px) {
-  .pirulos-row {
-    grid-template-columns: 1fr; /* one column */
-  }
+@media (max-width: 1070px) {
 
-  .pirulos-thumbnail {
-    border-right: none;
-    padding-right: 0;
-  }
+/* Default: image left, text right */
+.pirulos-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* ⬅️➡️ For EVEN items, reverse columns */
+.pirulos-item:nth-child(even) .pirulos-row {
+  grid-template-columns: 1fr;
+}
+
+/* Move image to the right column for even items */
+.pirulos-item:nth-child(even) .pirulos-thumbnail {
+  order: 2;
+  padding-right: 0;
+  padding-left: 0rem;
+  border-right: none;
+  border-left: none;
+}
+
+.pirulos-item:nth-child(odd) .pirulos-thumbnail {
+  order: 2;
+  padding-right: 0;
+  padding-left: 0rem;
+  border-right: none;
+  border-left: none;
+}
+
+/* Move text to the left column */
+.pirulos-item:nth-child(even) .pirulos-text {
+  order: 1;
+}
+
+.pirulos-thumbnail {
+  padding-right: 2rem;
+  flex: 0 0 auto;
+
+}
+
 }
 
 

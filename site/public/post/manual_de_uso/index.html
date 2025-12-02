@@ -14,7 +14,7 @@
     
     <title>
       
-        Manual de uso | La Crítica
+         | La Crítica
       
     </title>
 
@@ -208,6 +208,7 @@
         <li><a href="/categories/debates/">debates</a></li>
         <li><a href="/categories/ensayos/">ensayos</a></li>
         <li><a href="/categories/reseñas/">reseñas</a></li>
+        <li><a href="/bocanadas/">bocanadas</a></li>
         <li><a href="/autores/">autores</a></li>
         <li><a href="/quienes_somos/">quienes somos</a></li>
         <li><a href="/contáctenos/">contáctenos</a></li>
@@ -300,60 +301,13 @@ document.addEventListener("click", () => {
 <main class="article-layout">
 
   <aside class="article-sidebar">
-    <h1 class="post-title">Manual de uso</h1>
+    <h1 class="post-title"></h1>
 
-    
-      <div class="post-author">
-    
-      
-      
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-      
-      
-      
-      
-      
-
-      <div class="author-block">
-        <h3 class="author-name" data-pagefind-filter="author">
-          <a class="author-link" href="/autores/ramiro-alvarez-ugarte">
-            Ramiro Álvarez Ugarte
-          </a>
-        </h3>
-
-        
-          <p class="author-bio">Profesor de derecho constitucional en la Universidad de Buenos Aires e investigador</p>
-        
-
-        
-          <div class="twitter-handle" data-pagefind-ignore>
-            <a href="https://x.com/ramiroau" target="_blank">@ramiroau</a>
-          </div>
-        
-      </div>
-
-    
-      </div>
     
 
     
-      
-      
-      <p class="post-date">20 de noviembre de 2025</p>
     
-
+    
     
 
 
@@ -362,19 +316,6 @@ document.addEventListener("click", () => {
 
 
 
-
-  
-  
-
-  
-       
-       
-    
-
-    
-
-    
-  
 
 
 
@@ -397,13 +338,13 @@ document.addEventListener("click", () => {
   <div class="share-buttons" data-pagefind-ignore>
 
     <a class="share-button" 
-       href="https://twitter.com/intent/tweet?text=Manual&#43;de&#43;uso%0Apor&#43;Ramiro&#43;%C3%81lvarez&#43;Ugarte%0Aen&#43;%40LaCriticaDD%0A%0Ahttp%3A%2F%2Flocalhost%3A1313%2Fpost%2Fmanual_de_uso%2F"
+       href="https://twitter.com/intent/tweet?text=%0Apor&#43;%0Aen&#43;%40LaCriticaDD%0A%0Ahttp%3A%2F%2Flocalhost%3A1313%2Fpost%2Fmanual_de_uso%2F"
        target="_blank" rel="noopener noreferrer">
       <img src="/img/twitter.svg" alt="Compartir en Twitter" data-pagefind-ignore>
     </a>
 
     <a class="share-button"
-       href="https://bsky.app/intent/compose?text=Manual&#43;de&#43;uso%0Apor&#43;Ramiro&#43;%C3%81lvarez&#43;Ugarte%0A%0Ahttp%3A%2F%2Flocalhost%3A1313%2Fpost%2Fmanual_de_uso%2F"
+       href="https://bsky.app/intent/compose?text=%0Apor&#43;%0A%0Ahttp%3A%2F%2Flocalhost%3A1313%2Fpost%2Fmanual_de_uso%2F"
        target="_blank" rel="noopener noreferrer">
       <img src="/img/bluesky.svg" alt="Compartir en Bluesky" data-pagefind-ignore>
     </a>
@@ -421,7 +362,7 @@ document.addEventListener("click", () => {
     </a>
 
     <a class="share-button"
-       href="https://api.whatsapp.com/send?text=Manual&#43;de&#43;uso%0Apor&#43;Ramiro&#43;%C3%81lvarez&#43;Ugarte%0Aen&#43;%40LaCriticaDD%0A%0Ahttp%3A%2F%2Flocalhost%3A1313%2Fpost%2Fmanual_de_uso%2F"
+       href="https://api.whatsapp.com/send?text=%0Apor&#43;%0Aen&#43;%40LaCriticaDD%0A%0Ahttp%3A%2F%2Flocalhost%3A1313%2Fpost%2Fmanual_de_uso%2F"
        target="_blank" rel="noopener noreferrer">
       <img src="/img/whatsapp.svg" alt="Compartir en WhatsApp" data-pagefind-ignore>
     </a>
@@ -429,6 +370,7 @@ document.addEventListener("click", () => {
   </div>
 </section>
 
+    
 
     
 
@@ -441,170 +383,30 @@ document.addEventListener("click", () => {
     class="article-content"
     data-pagefind-body
     data-pagefind-filter-category=""
-    data-pagefind-filter-author="Ramiro Álvarez Ugarte"
-  >
-
+    data-pagefind-filter-author=""
+      >
     
-      
-      
+    
 
       
-      
-        
-
       
       
 
       
       
 
-        
+      
+      
+        <p>manual_de_uso.md</p>
 
-        
-        
-        
-        
-        
-
-        
-          <p>Este documento explica algunas peculiaridades del uso de La Crítica del Derecho, un sitio basado en <a href="https://gohugo.io/">Hugo</a>, un <em>framework</em> para sitios estáticos construido en Go. Está hosteado en Netlify para poder tener un administrador de contenido accesible.</p>
-<p>Hugo permite un nivel casi total de customización. Hay algunas características del sitio que necesitan entender cómo se pueden &ldquo;activar&rdquo; esas características. Las mismas son optativas, y quedan a elección del autor / editor usarlas o no. Pero, en caso de querer usarlas, es sencillo hacerlo y requiere entender brevemente qué son los <code>shortcodes</code>.</p>
-<p>Los <code>shortcodes</code> son formas de convocar elementos artesanales del sitio, diseñados a nuestro propio gusto y placer. se convocan con algunos símbolos de apertura y de cierre. Y, como es usual, una vez abiertos deben ser cerrados usando el famoso símbolo <code>/</code>.</p><figure class='thumbnail-insert'><img src='/img/edward.png' alt=''><figcaption><span class='epigraph'>Edward Tufte</span></figcaption></figure>
-<p>Van entonces dos usos (por ahora) de los <code>shortcodes</code> en <strong>La Crítica</strong>.</p>
-<h1 id="callouts--frases-destacadas">Callouts / frases destacadas</h1>
-<p>Son los elementos de lectura rápida que fueron solicitados a la hora de diseño. No les amo, pero ahí están. Usarlos requiere dos pasos.</p>
-<ol>
-<li>Cargar las &ldquo;frases destacadas&rdquo; en la sección correspondiente del editor Decap CMS.</li>
-<li>En el texto simplemente hay que decir dónde se pone usando el siguiente código:</li>
-</ol>
-
-
-
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<div class="callout-wrapper">
-
-  
-  
-    <div class="callout-text">
-      "Los destacados se arman rápidamente, sirven para que nos vean, para compartir. No abusaría de ellos, con uno &mdash;creo&mdash; alcanza."
-    </div>
-  
-
-  
-  <div class="callout-meta">
-    
-      <span class="callout-author">Ramiro Álvarez Ugarte</span>
-    
-
-    <span class="callout-title">Manual de uso</span>
-    <span class="callout-lacritica">La Crítica del Derecho</span>
+      
 
     
 
-    
-    
-    
-
-    <span class="callout-date">20 de noviembre de 2025</span>
   </div>
 
-  
-  <div class="share-fixed">
-
-    <div class="left-logo">
-      <a href="/" class="left-logo-link">
-        <img src="/img/logo_small.svg" class="left-logo-img" alt="Logo">
-      </a>
-    </div>
-
-    <div class="right-icons">
-
-      <a class="share-icon" id="share-x" aria-label="Compartir en X">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--base-bg)">
-          <path d="M18.36 2H21l-6.78 7.75L22 22h-6.82l-5.04-6.64L3.64 22H1l7.39-8.45L2 2h6.92l4.41 5.86L18.36 2z"/>
-        </svg>
-      </a>
-
-      <a class="share-icon" id="share-whatsapp" aria-label="Compartir en WhatsApp">
-        <svg width="22" height="22" viewBox="0 0 32 32" fill="var(--base-bg)">
-          <path d="M16.04 2.01C8.76 2.01 2.88 7.9 2.88 15.17c0 2.58.75 5.04 2.06 7.18L2 30l7.93-2.94a13.13 13.13 0 0 0 6.11 1.49h.01c7.28 0 13.16-5.89 13.16-13.16 0-7.27-5.89-13.17-13.17-13.17zm7.67 18.88c-.32.9-1.84 1.76-2.55 1.87-.65.1-1.49.15-2.41-.15-.56-.18-1.29-.42-2.22-.82-3.9-1.69-6.45-5.6-6.65-5.86-.2-.26-1.59-2.12-1.59-4.05 0-1.93 1-2.88 1.35-3.27.35-.39.76-.49 1.02-.49.26 0 .51.01.73.01.23 0 .55-.13.86.66.32.79 1.09 2.73 1.18 2.93.1.2.16.43.03.69-.13.26-.2.43-.39.66-.2.23-.41.52-.58.7-.2.2-.41.41-.18.81.23.39 1.01 1.66 2.17 2.69 1.49 1.32 2.74 1.73 3.13 1.93.39.2.63.16.87-.1.23-.26 1.01-1.18 1.28-1.59.26-.39.52-.33.87-.2.35.13 2.2 1.04 2.57 1.23.36.2.61.29.7.46.1.17.1 1.06-.22 1.96z"/>
-        </svg>
-      </a>
-
-      <a class="share-icon" id="share-telegram" aria-label="Compartir en Telegram">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--base-bg)">
-          <path d="M9.036 17.29l-.398 5.593c.57 0 .819-.245 1.115-.537l2.67-2.587 5.543 4.05c1.016.57 1.738.27 2-1.01l3.628-16.94c.367-1.66-.6-2.31-1.695-1.91L1.685 10.47c-1.634.63-1.61 1.54-.28 1.95l5.577 1.75 12.928-8.16c.61-.37 1.165-.17.708.24L9.036 17.29z"/>
-        </svg>
-      </a>
-
-      <a class="share-icon" id="copy-link" aria-label="Copiar enlace">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--base-bg)">
-          <path d="M3.9 12a5 5 0 0 1 5-5h4v2h-4a3 3 0 1 0 0 6h4v2h-4a5 5 0 0 1-5-5zm7-1h4a3 3 0 1 1 0 6h-4v2h4a5 5 0 0 0 0-10h-4v2z"/>
-        </svg>
-      </a>
-
-    </div>
-  </div>
-</div>
-
-<p>Eso para la primera frase. Si se quiere poner la segunda hay que poner <code>1</code>, la tercera <code>2</code>, y así. Vean.</p>
-<p><img src="/img/ejemplo1.png" alt=""></p>
-<h1 id="notas-al-márgen">Notas al márgen</h1>
-<p>Sigue al espíritu de <a href="https://en.wikipedia.org/wiki/Edward_Tufte">Edward Tufte</a>. Básicamente, hace lo que dice: permite agregar notas al margen, un recurso que puede ser interesante de usar en el marco de una argumentación pero está pensado para visualización en pantallas grandes &mdash; en teléfonos, lo que queremos es un gran flujo de texto que no sea interrumpido. En esos casos, la &ldquo;buena práctica&rdquo; para textos pensados para leerse en un teléfono es usar las tradicionales notas al pie <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<p>Yo creo, que si es así, por qué no funciona. Debería meter a Hart, Dworkin, Fuller. ¿No? No debería, ¿acaso?</p>
-<p>Pero habilitar la <em>marginalia</em> no está mal, y también resulta fácil de usar. <span class="sidenote"><small>Por ejemplo, precisamente aquí. Se pueden poner también <a href="https://lacritica.ar/">links</a>.</small></span>
- Simplemente es necesario usar ese <code>shortcode</code> justo después del lugar donde se quiere hacer la anotación.</p>
-<p>Para que se entienda, los párrafos anteriores se ven así escritos en Markdown, con los símbolos que convocan.</p>
-<p><img src="/img/ejemplo2.png" alt=""></p>
-<h1 id="importante-sobre-las-notas-destacadas">Importante sobre las notas &ldquo;destacadas&rdquo;</h1>
-<p>Si queremos que no desaparezcan en el eter, cuando reemplazamos una nota destacada por otra la que &ldquo;sale&rdquo; de la sección tiene que editarse, para <em>desseleccionar</em> las opción <em>highlight</em>.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>Así.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-
-        
-
-      
-  </div>
 
 </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="post-nav">
-  <span class="nav-prev"><a href="/post/la_carta_de_lectores/">&larr; La carta de lectores</a></span>
-  <span class="nav-next"><a href="/post/diez-articulos-que-marcaron-mi-vida-academica/">Diez artículos que marcaron mi vida académica &rarr;</a></span>
-</nav>
-
 
 
 
@@ -624,7 +426,7 @@ document.addEventListener("click", () => {
 
      
     <div class="footer-text">
-    @ 2025 La Crítica del Derecho
+    <span>@ 2025 La Crítica del Derecho</span>
     </div>
     <br>
 
@@ -645,16 +447,19 @@ document.addEventListener("click", () => {
 
     <br>
 
-    
-    <div class="footer-social-bottom">
-      <span color = "#fff">hosted on</a><a href="https://github.com/ramiroau/lacritica2" target="blank" aria-label="GitHub">
-         <img src="/img/github.svg" alt="GitHub">
-      </a> 
-      <span color = "#fff">deployed by</a><a href="https://www.netlify.com/" target="blank" aria-label="Netlify">
-         <img src="/img/netlify.svg" alt="Netlify">
-      </a> 
-  </div>
+
+<div class="footer-social-bottom">
+  <span style="color:#fff">hosted on </span>
+  <a href="https://github.com/ramiroau/lacritica2" target="_blank" aria-label="GitHub">
+    <img src="/img/github.svg" alt="GitHub">
+  </a>
+  <span style="color:#fff"> deployed by </span>
+  <a href="https://www.netlify.com/" target="_blank" aria-label="Netlify">
+    <img src="/img/netlify.svg" alt="Netlify">
+  </a> 
+</div>
 </footer>
+
 
 
 

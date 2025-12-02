@@ -82,6 +82,12 @@ collections:
         default: false
         hint: "Marcar si va a la nota destacada2 de la home"
 
+      - label: "Exclude Thumbnail from Body"
+        name: "exclude_thumbnail_from_body"
+        widget: "boolean"
+        default: false
+        hint: "Marcar si queremos que la foto que ilustra no vaya intercalada en el cuerpo del texto"
+
       - label: "Frases destacadas"
         name: "highlight_phrases"
         widget: "list"
@@ -90,6 +96,14 @@ collections:
           label: "Frase"
           name: "phrase"
           widget: "string"
+
+      - label: "Frase destacada para la Home"
+        name: "featured_callout"
+        widget: "number"
+        hint: "Introduce el número de la frase destacada para destacar en la Home"
+        min: 0         # optional: minimum value allowed
+        max: 5       # optional: maximum value allowed
+        step: 1        # optional: increment step
 
       - label: "Publicado originalmente en"
         name: "publicado_originalmente_en"
@@ -217,6 +231,12 @@ collections:
           - { label: "Epigraph", name: "epigraph",  widget: "string", required: false }
           - { label: "Copyright", name: "copyright", widget: "string", required: false }
 
+      - label: "Exclude Thumbnail from Body"
+        name: "exclude_thumbnail_from_body"
+        widget: "boolean"
+        default: false
+        hint: "Marcar si queremos que la foto que ilustra no vaya intercalada en el cuerpo del texto"
+        
       - label: "Obra reseñada"
         name: "obra_reseñada"
         widget: "string"
@@ -227,6 +247,54 @@ collections:
         widget: "string"
         required: false
         hint: "Dónde fue publicado originalmente la pieza (admite markdown links internos)"
+
+      - { label: "Body", name: "body", widget: "markdown" }
+
+
+  # -------------------------
+  # BOCANADAS
+  # -------------------------
+  - name: "bocanadas"
+    label: "Bocanadas"
+    label_singular: "bocanadas"
+    folder: "site/content/bocanadas"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "bocanadas/{{slug}}"
+    identifier_field: "title"
+
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        hint: "lo-que-va-ser-la-url-sin-acentos-ni-letras-con-simbolos-tipo-la-que-se-parece-a-la-n-con-bigote"
+        pattern: ['^[a-z0-9-]+$', "Solo minúsculas, números y guiones"]
+
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "autores"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+        multiple: true
+
+      - label: "Thumbnail"
+        name: "thumbnail"
+        widget: "list"
+        allow_add: true     # MUST be true so the button appears
+        min: 0
+        max: 1              # Still only allows ONE item
+        hint: "Se puede poner epígrafe (recomendado) y copyright (si queremos dar crédito a la foto)"
+        fields:
+          - { label: "Image",    name: "src",       widget: "image" }
+          - { label: "Epigraph", name: "epigraph",  widget: "string", required: false }
+          - { label: "Copyright", name: "copyright", widget: "string", required: false }
 
       - { label: "Body", name: "body", widget: "markdown" }
 
