@@ -14,7 +14,7 @@ thumbnail:
     copyright: por Mariela Puga
 highlight: false
 highlight2: false
-exclude_thumbnail_from_body: true
+exclude_thumbnail_from_body: false
 ---
 Me resulta particularmente extraña la incomprensión de un argumento tan simple, tan directo, como el argumento que el feminismo opone a la interpretación originalista de la constitución. Cuando una se pregunta varias veces ¿qué no se entiende de lo obvio?, quizás es tiempo de hacerse la pregunta de otra manera. Por ejemplo, ¿qué barrera de sentido se opone a la conversación del constitucionalismo con el punto de vista feminista?
 
