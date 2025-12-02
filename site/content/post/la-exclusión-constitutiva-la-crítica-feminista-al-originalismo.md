@@ -2,12 +2,15 @@
 title: La exclusión constitutiva. La crítica feminista al originalismo
 slug: la-exclusion-constitutiva-la-critica-feminista-al-originalismo
 date: 2025-11-25T20:50:22.410Z
-description: Cuál es la razón, y porqué cuesta entender la crítica feminista al
-  método originalista de interpretación constitucional.
+description: Cuál es la razón, y porqué cuesta entender la crítica feminista al método originalista de interpretación constitucional.
+thumbnail: 
+  - src: /img/puga_mural.jpeg
+    epigraph: Mural
+    copyright: Mariela Puga
 categories:
-  - ensayos
+ - ensayos
 author:
-  - Mariela Puga
+ - Mariela Puga
 highlight: false
 highlight2: false
 ---
@@ -15,13 +18,13 @@ Me resulta particularmente extraña la incomprensión de un argumento tan simple
 
 En este breve ensayo intentaré hacer inteligible una intuición a la que llamo “la exclusión constitutiva”. Esto es, la intuición de que hay un sentido común sobre “lo” constitucional desde el cual se hace ininteligible a la crítica feminista. Lo más importante, es que ese sentido surge de las circunstancias históricas de la exclusión originaria de las mujeres del sistema constitucional. 
 
-**El planteo de lo obvio**
+# El planteo de lo obvio
 
 El feminismo rechaza la devoción por un pasado en el que de forma explícita y motivada se proscribió a las mujeres (e indígenas) del mundo público, tal, el pasado constituyente de mediados del siglo XIX. ¿Qué parte de este rechazo no es asequible? 
 
 El feminismo no encuentra motivo para aplaudir a Alberdi, cuando éste niega la necesidad de educar a las mujeres, porque ellas están para “hermosear la soledad fecunda del hogar”[^1]; ni tampoco ve razones para venerar a los constituyentes, disimulando que ellos decidieron excluir a más de la mitad de la población de la ciudadanía pública, iniciando así casi un siglo de construcción institucional signada por la proscripción sexual y racial. En fin, ¿qué es tan difícil de entender de este no querer reconocer autoridad normativa a una perspectivas misógina y racista de “lo” constitucional? 
 
-**El planteo originalista**
+# El planteo originalista
 
 El originalismo se nos ofrece como un método a-moral de interpretación del derecho. Cuando lo que se interpreta es la constitución, entonces, el originialismo nos indica cómo debemos atribuir significado a normas particularmente vagas, referidas a asuntos intensamente polémicos, y que, en buena parte, son de las más antiguas que tiene nuestro orden jurídico. 
 
@@ -31,11 +34,11 @@ Sin embargo, esta “lógica del propósito de los muertos” tiene más dificul
 
 En cualquier caso, la propuesta es clara. Frente a la polisemia de una palabra, o la multidimensionalidad política de un principio encarnado en unas palabras, los originalistas demandan, insistentemente, que nos atemos al sentido valórico al que aspiraron los “padres fundadores” (sic), los redactores del texto. Atarse, como se ató Ulises frente al canto de las sirenas.[^2] 
 
-**Los planteos en tensión**
+# Los planteos en tensión
 
 Muchos críticos del originalismo se preguntan si esta empresa es posible. ¿Realmente podemos saber a qué aspiraban axiológicamente los redactores de la constitución?; ¿los métodos de indagación del originalismo son suficientemente objetivos o conspicuos para conseguirlo? Permítaseme el libertinaje de responder que no, en ambos casos. Algunas de las recientes interpretaciones originalistas de nuestra Corte Suprema, son un verdadero desafío nomotético, en nombre de la representación de un pasado, con argumentos que resultarían inasibles para la ciencia historiográfica.[^3] Sin embargo, no voy a desviarme en este asunto, ya que la crítica feminista al originalismo no es metodológica, sino substantiva. Las feministas no nos preguntamos si el método originalista es bueno, o si sus objetivos son factibles de alcanzar. Lo que cuestionamos es la legitimidad de esos objetivos. En apretada síntesis, nos preguntamos críticamente ¿por qué debemos atarnos a lo que quisieron axiológicamente los redactores misóginos y racistas de la constitución originaria? 
 
-El originalismo tienen una respuesta “comodín”: La intención fundacional es la esencia de lo fundado. La constitución no es sino lo que los padres fundadores quisieron que fuera. Su intención es su principio activo, procreativo. Este argumento “comodín” (convenientemente circular), a veces parece convencer a progresistas. Algunos dicen preferir al originalismo antes que, a una interpretación dinámica de la constitución, por ser esta última demasiado contra mayoritaria. Entienden que la interpretación originalista podría ser “más democrática” que dejar libertad a los jueces, a los que nadie voto, para decidir el significado del texto. No voy a detenerme aquí a mostrar “la paja en el ojo” de esa perspectiva. No por católica, sólo porque me desvía del asunto: la crítica feminista al originalismo.  
+El originalismo tienen una respuesta “comodín”: La intención fundacional es la esencia de lo fundado. La constitución no es sino lo que los padres fundadores quisieron que fuera. Su intención es su principio activo, procreativo. Este argumento “comodín” (convenientemente circular), a veces parece convencer a progresistas. Algunos dicen preferir al originalismo antes que, a una interpretación dinámica de la constitución, por ser esta última demasiado contra mayoritaria. Entienden que la interpretación originalista podría ser “más democrática” que dejar libertad a los jueces, a los que nadie voto, para decidir el significado del texto. No voy a detenerme aquí a mostrar “la paja en el ojo” de esa perspectiva. No por católica, sólo porque me desvía del asunto: la crítica feminista al originalismo. 
 
 El feminismo no contrapone las aspiraciones votadas, con las no votadas, ni a los constituyentes muertos, con los jueces vivos. La crítica no se activa ni por el principio mayoritario en abstracto, ni por la guerra zombi. Se trata, sencillamente, de que entendemos que los muertos (convencionales constituyentes de 1853), tenían una perspectiva misógina y racista de lo público. De modo que la probabilidad de que su mirada sobre el texto constitucional pueda ser más democrática que la actual, nos resulta un oxímoron.
 
@@ -49,7 +52,7 @@ Necesitamos dejar de creer “tan frescamente” que la misoginia era sólo una 
 
 La mirada misógina de los modernos determinó lo que entendemos por “libertad”, por “autonomía”, y sobre todo, lo que entendemos por “lo” constitucional. Déjenme intentar probar parte de este punto antes de terminar.
 
-**Para ejemplo, un botón** 
+# Para ejemplo, un botón
 
 Hace un año atrás discutíamos los peligros de las posiciones originalistas del entonces candidato a la Corte Suprema de Justicia de la Nación, Manuel García Mansilla. Varias criticamos sus ideas negadoras de derechos de las mujeres, en una audiencia pública que tuvo lugar en la Cámara de Diputados. En mi caso, argumenté que el origen de sus fallas interpretativas, estaba en su método interpretativo, el originalismo, al que critiqué como un método “reaccionario”. 
 
@@ -65,7 +68,7 @@ Lo que siempre me inquieto de aquel suceso, es que nadie derivó de él la idea 
 
 Muy por el contrario, para la mayor parte del constitucionalismo argentino el aborto siguió estando fuera de la constitución, como se quiso en el siglo XIX. No era inconstitucional prohibirlo ni permitirlo.[^5] Sólo se podía luchar por conquistar un derecho infraconstitucional (como afortunadamente se hizo), sin la impertinente pretensión de ser parte de lo constitucional. ¿Se entiende el matiz del mismo punto? 
 
-**La raíz misógina en el constitucionalismo**
+# La raíz misógina en el constitucionalismo
 
 Sabemos muy poco de la perspectiva misoginia de nuestros padres fundadores, sólo la conocemos en el “acto constituyente”. Sin embargo, sabemos mucho de las raíces históricas de la misoginia, como sistema de creencias. Inmediatamente antes de la ilustración liberal, la creencia en la inferioridad de las mujeres se vinculaba a su supuesta falta de “autocontrol”. Esto era importante para el humanismo medieval, porque el “autocontrol” era la virtud definitoria del individuo moral, socialmente valioso, el que luego devendría en el ciudadano moderno. Las mujeres, eran consideradas un ser malicioso, porque sus poderes seductores (como Alberdi imaginaba a los de Lola Montes), amenazaban el “autocontrol” del individuo varón, el que debía protegerse de ellas para resguardar su virtud moral, social, y política. En ello es clara la influencia del cristianismo, y no sería difícil, seguramente, rastrear este tipo de convicción en nuestros convencionales más católicos.
 
@@ -75,12 +78,12 @@ Lo mismo se puede observar frente a la metáfora defensiva, que funda la idea in
 
 La proscripción de las mujeres y de los individuos subalternados al momento de la sanción constitucional es mucho más estructurante del sentido común de “lo” constitucional, y de “lo” público, que lo que usualmente advertimos. Para empezar a notarlo hay que hablar de ello, dejar de naturalizarlo, y empezar a analizarlo como parte del sistema de creencias y aspiraciones constitucionales originarias. Cuando no entendemos la crítica feminista a ese sistema de creencias, es porque esas estructuras de sentido no nos dejan entender. Hay un largo camino por recorrer en la deconstrucción del sentido de “lo” constitucional asentado en la exclusión originaria. Un buen comienzo, es intentar entender mejor la crítica feminista al originalismo.
 
-[^1]:  Bases y Puntos de Partida para la Organización Política de la República Argentina” (1853-1994) (Buenos Aires. Plus Ultra) Cap. XIII, pag.79
+[^1]: Bases y Puntos de Partida para la Organización Política de la República Argentina” (1853-1994) (Buenos Aires. Plus Ultra) Cap. XIII, pag.79
 
-[^2]:  A veces van más lejos, y frente a la amalgama de reformas constitucionales con nuevos sentidos que tensionan con los viejos, algún originalista reclama la inconstitucionalidad de una reforma, o que los nuevos derechos de tratados internacionales de derechos humanos tienen una jerarquía inferiror a los viejos, de la primera parte de la constitución. menor jerarquía que los derechos civiles de la primera parte de la constitución. 
+[^2]: A veces van más lejos, y frente a la amalgama de reformas constitucionales con nuevos sentidos que tensionan con los viejos, algún originalista reclama la inconstitucionalidad de una reforma, o que los nuevos derechos de tratados internacionales de derechos humanos tienen una jerarquía inferiror a los viejos, de la primera parte de la constitución. menor jerarquía que los derechos civiles de la primera parte de la constitución. 
 
-[^3]:  Un ejemplo es la decisión de nuestra Corte Suprema en el caso “Sindicato Policial Buenos Aires c/ Ministerio de Trabajo s/ ley de asociaciones sindicales” (11/04/2017, Fallos: 909/2019). Con gesto originalista, se interpreta el artículo 14bis de la CN contra su propia literalidad, y se representa la intención del convencional constituyente de 1957, con evidencias historiogáficas maniqueas, cuando no impertinentes.
+[^3]: Un ejemplo es la decisión de nuestra Corte Suprema en el caso “Sindicato Policial Buenos Aires c/ Ministerio de Trabajo s/ ley de asociaciones sindicales” (11/04/2017, Fallos: 909/2019). Con gesto originalista, se interpreta el artículo 14bis de la CN contra su propia literalidad, y se representa la intención del convencional constituyente de 1957, con evidencias historiogáficas maniqueas, cuando no impertinentes.
 
-[^4]:  Ver Boch Fiol, Esperanza; Ferrer, Victoria A. y Gil Planas, Margarita (1999) *Historia de la Misoginia.*  (Rubí (Barcelona): Anthropos Editorial) (Palma Mallorca: Universitat de les illes Balears) [En línea](file:///C:\\Users\\Gateway\\AppData\\Roaming\\Microsoft\\Word\\\(PDF\)%20Historia%20de%20la%20misoginia)
+[^4]: Ver Boch Fiol, Esperanza; Ferrer, Victoria A. y Gil Planas, Margarita (1999) *Historia de la Misoginia.* (Rubí (Barcelona): Anthropos Editorial) (Palma Mallorca: Universitat de les illes Balears) [En línea](file:///C:\\Users\\Gateway\\AppData\\Roaming\\Microsoft\\Word\\\(PDF\)%20Historia%20de%20la%20misoginia).
 
-[^5]:  Hubo quienes sostuvieron que la reforma de 1994 lo volvía inconstitucional, ya que la ley de ratificación de la Convención de Derechos del Niño, daba rango constitucional al derecho a la vida del niño desde la concepción. Las fallas de este argumento han sido expuestas en extenso.
+[^5]: Hubo quienes sostuvieron que la reforma de 1994 lo volvía inconstitucional, ya que la ley de ratificación de la Convención de Derechos del Niño, daba rango constitucional al derecho a la vida del niño desde la concepción. Las fallas de este argumento han sido expuestas en extenso.
